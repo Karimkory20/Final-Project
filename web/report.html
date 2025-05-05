@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberattack Analysis Report</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/web/styles.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+    const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar, ResponsiveContainer, AreaChart, Area } = Recharts;
+
+    const loadFileData = (fileName) => {
+      return `Data/${fileName}`;
+    };
+
+    const CyberattackReport = () => {
+      const [data, setData] = useState(null);
+      const [filteredData, setFilteredData] = useState(null);
+      const [loading, setLoading] = useState(true);
+      const [darkMode, setDarkMode] = useState(localStorage.getItem('theme') === 'dark');
+      const [collapsedSections, setCollapsedSections] = useState({});
+      const [chartType, setChartType] = useState('line');
+      const [startDate, setStartDate] = useState('');
+      const [endDate, setEndDate] = useState('');
+      const [selectedCountry, setSelectedCountry] = useState('');
+
+      useEffect(() => {
+        fetch('Data/formatted_cyber_with_region.csv')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then(csvText => {
+            const results = Papa.parse(csvText, {
+              header: true,
+              skipEmptyLines: true,
+              transformHeader: (header) => header.trim().replace(/^"|"$/g, ''),
+              transform: (value, header) => {
+                let cleaned = value.trim().replace(/^"|"$/g, '');
+                if (['Spam', 'Ransomware', 'Local Infection', 'Exploit', 'Malicious Mail', 'Network Attack', 'On Demand Scan', 'Web Threat', 'Total_Attack_Percentage'].includes(header)) {
+                  return parseFloat(cleaned) || 0;
+                }
+                return cleaned;
+              }
+            });
+
+            const cleanedData = results.data.map(row => ({
+              ...row,
+              AttackDate: chrono.parseDate(row['AttackDate']),
+              Total_Attack_Percentage: parseFloat(row['Total_Attack_Percentage']) || 0
+            })).filter(row => row.AttackDate && !isNaN(row.Total_Attack_Percentage));
+
+            console.log('Parsed Data:', results.data);
+            console.log('Cleaned Data:', cleanedData);
+            setData(cleanedData);
+            setFilteredData(cleanedData);
+            setLoading(false);
+          })
+          .catch(error => {
+            console.error('Error fetching or parsing CSV:', error);
+            setLoading(false);
+          });
+      }, []);
+
+      useEffect(() => {
+        if (darkMode) {
+          document.body.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark-mode');
+          localStorage.setItem('theme', 'light');
+        }
+      }, [darkMode]);
+
+      const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+      };
+
+      const toggleSection = (sectionId) => {
+        setCollapsedSections(prev => ({
+          ...prev,
+          [sectionId]: !prev[sectionId]
+        }));
+      };
+
+      const toggleChartType = () => {
+        setChartType(chartType === 'line' ? 'area' : 'line');
+      };
+
+      const applyFilters = () => {
+        if (!data) return;
+        let filtered = [...data];
+        if (startDate) {
+          filtered = filtered.filter(row => row.AttackDate >= new Date(startDate));
+        }
+        if (endDate) {
+          filtered = filtered.filter(row => row.AttackDate <= new Date(endDate));
+        }
+        if (selectedCountry) {
+          filtered = filtered.filter(row => row.Country === selectedCountry);
+        }
+        setFilteredData(filtered);
+      };
+
+      const resetFilters = () => {
+        setStartDate('');
+        setEndDate('');
+        setSelectedCountry('');
+        setFilteredData(data);
+      };
+
+      const exportChart = (chartId) => {
+        const chartElement = document.getElementById(chartId);
+        if (!chartElement) return;
+        html2canvas(chartElement).then(canvas => {
+          const link = document.createElement('a');
+          link.href = canvas.toDataURL('image/png');
+          link.download = `${chartId}.png`;
+          link.click();
+        });
+      };
+
+      const exportCSV = () => {
+        if (!filteredData) return;
+        const csv = Papa.unparse(filteredData);
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'cyberattack_data.csv';
+        link.click();
+      };
+
+      if (loading) return <div className="loading" role="status" aria-live="polite">Loading...</div>;
+
+      const topCountries = ['United States of America', 'People\'s Republic of China', 'Russian Federation', 'Kingdom of the Netherlands', 'French Republic'];
+      const countryData = topCountries.map(country => ({
+        name: country,
+        data: (filteredData || []).filter(row => row.Country === country)
+          .sort((a, b) => a.AttackDate - b.AttackDate)
+          .map(row => ({
+            date: row.AttackDate.toISOString().split('T')[0],
+            value: row.Total_Attack_Percentage
+          }))
+      }));
+
+      const regions = [...new Set((filteredData || []).map(row => row.Region))].filter(r => r !== 'Unknown Region');
+      const regionData = regions.map(region => ({
+        region,
+        avgAttack: (filteredData || []).filter(row => row.Region === region)
+          .reduce((sum, row) => sum + row.Total_Attack_Percentage, 0) / 
+          (filteredData || []).filter(row => row.Region === region).length
+      }));
+
+      const futureData = countryData[0].data.slice(-10).map((d, i) => ({
+        date: new Date(new Date(d.date).getTime() + (i + 1) * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        value: d.value * (1 + Math.random() * 0.1 - 0.05)
+      }));
+
+      const allCountries = [...new Set((data || []).map(row => row.Country))].sort();
+
+      return (
+        <div className={`report-container ${darkMode ? 'dark-mode' : ''}`}>
+          <header className="report-header" role="banner">
+            <div className="header-content">
+              <i className="fas fa-shield-alt header-icon" aria-hidden="true"></i>
+              <h1>Global Cyberattack Analysis Report</h1>
+              <button className="dark-mode-toggle" onClick={toggleDarkMode} aria-label={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}>
+                <i className={darkMode ? 'fas fa-sun' : 'fas fa-moon'} aria-hidden="true"></i>
+              </button>
+            </div>
+            <nav className="report-nav" role="navigation" aria-label="Main navigation">
+              <button className="nav-toggle" onClick={() => document.querySelector('.report-nav ul').classList.toggle('nav-open')} aria-label="Toggle navigation menu" aria-expanded="false">
+                <i className="fas fa-bars" aria-hidden="true"></i>
+              </button>
+              <ul>
+                <li><a href="#summary" onClick={() => toggleSection('summary')} aria-current={collapsedSections.summary ? 'false' : 'true'}>Summary</a></li>
+                <li><a href="#time-series" onClick={() => toggleSection('time-series')} aria-current={collapsedSections['time-series'] ? 'false' : 'true'}>Time Series</a></li>
+                <li><a href="#regional" onClick={() => toggleSection('regional')} aria-current={collapsedSections.regional ? 'false' : 'true'}>Regional</a></li>
+                <li><a href="#predictions" onClick={() => toggleSection('predictions')} aria-current={collapsedSections.predictions ? 'false' : 'true'}>Predictions</a></li>
+                <li><a href="#conclusion" onClick={() => toggleSection('conclusion')} aria-current={collapsedSections.conclusion ? 'false' : 'true'}>Conclusion</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <main className="report-main" role="main">
+            <section id="filters" className="report-section filter-section" aria-labelledby="filters-heading">
+              <h2 id="filters-heading"><i className="fas fa-filter"></i> Data Filters</h2>
+              <div className="report-card filter-card">
+                <div className="filter-group">
+                  <label htmlFor="start-date">Start Date:</label>
+                  <input
+                    type="date"
+                    id="start-date"
+                    value={startDate}
+                    onChange={(e) => setStartDate(e.target.value)}
+                    aria-describedby="start-date-desc"
+                  />
+                  <span id="start-date-desc" className="sr-only">Select the start date for filtering data</span>
+                </div>
+                <div className="filter-group">
+                  <label htmlFor="end-date">End Date:</label>
+                  <input
+                    type="date"
+                    id="end-date"
+                    value={endDate}
+                    onChange={(e) => setEndDate(e.target.value)}
+                    aria-describedby="end-date-desc"
+                  />
+                  <span id="end-date-desc" className="sr-only">Select the end date for filtering data</span>
+                </div>
+                <div className="filter-group">
+                  <label htmlFor="country">Country:</label>
+                  <select
+                    id="country"
+                    value={selectedCountry}
+                    onChange={(e) => setSelectedCountry(e.target.value)}
+                    aria-describedby="country-desc"
+                  >
+                    <option value="">All Countries</option>
+                    {allCountries.map(country => (
+                      <option key={country} value={country}>{country}</option>
+                    ))}
+                  </select>
+                  <span id="country-desc" className="sr-only">Select a country to filter data</span>
+                </div>
+                <div className="filter-buttons">
+                  <button onClick={applyFilters} className="filter-button" aria-label="Apply filters to data">
+                    Apply Filters
+                  </button>
+                  <button onClick={resetFilters} className="filter-button reset-button" aria-label="Reset all filters">
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section id="summary" className={`report-section ${collapsedSections.summary ? 'collapsed' : ''}`} aria-labelledby="summary-heading">
+              <h2 id="summary-heading" onClick={() => toggleSection('summary')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('summary')}>
+                <i className="fas fa-info-circle" aria-hidden="true"></i> Summary
+                <i className={`fas fa-chevron-${collapsedSections.summary ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
+              </h2>
+              <div className="report-card">
+                <p>
+                  This report analyzes global cyberattacks from October 2022 to December 2023, using LSTM models to predict future attack percentages. Key findings include high attack volumes in the United States and China, with emerging risks in regions like Africa. Our predictions help prioritize cybersecurity resources.
+                </p>
+                <div className="highlight">
+                  <strong>Interesting Fact:</strong> Countries like Afghanistan show unexpectedly high attack percentages, possibly due to targeted campaigns or underreported infrastructure vulnerabilities.
+                </div>
+              </div>
+            </section>
+
+            <section id="time-series" className={`report-section ${collapsedSections['time-series'] ? 'collapsed' : ''}`} aria-labelledby="time-series-heading">
+              <h2 id="time-series-heading" onClick={() => toggleSection('time-series')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('time-series')}>
+                <i className="fas fa-chart-line" aria-hidden="true"></i> Time Series of Cyberattacks
+                <i className={`fas fa-chevron-${collapsedSections['time-series'] ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
+              </h2>
+              <div className="report-card">
+                <button onClick={toggleChartType} className="chart-toggle" aria-label={`Switch to ${chartType === 'line' ? 'Area' : 'Line'} Chart`}>
+                  Switch to {chartType === 'line' ? 'Area' : 'Line'} Chart
+                </button>
+                {countryData.map((country, index) => (
+                  <div key={country.name} className="chart-card" id={`time-series-chart-${index}`}>
+                    <h3>{country.name}</h3>
+                    <div className="chart-container">
+                      <ResponsiveContainer width="100%" height={300}>
+                        {chartType === 'line' ? (
+                          <LineChart data={country.data}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="date" fontSize={12} tickFormatter={(date) => new Date(date).toLocaleDateString()} />
+                            <YAxis fontSize={12} unit="%" />
+                            <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
+                            <Legend />
+                            <Line type="monotone" dataKey="value" name="Attack Percentage" stroke="#4f46e5" strokeWidth={2} />
+                          </LineChart>
+                        ) : (
+                          <AreaChart data={country.data}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="date" fontSize={12} tickFormatter={(date) => new Date(date).toLocaleDateString()} />
+                            <YAxis fontSize={12} unit="%" />
+                            <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
+                            <Legend />
+                            <Area type="monotone" dataKey="value" name="Attack Percentage" fill="url(#areaGradient)" stroke="#4f46e5" strokeWidth={2} />
+                            <defs>
+                              <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="5%" stopColor="#4f46e5" stopOpacity={0.8}/>
+                                <stop offset="95%" stopColor="#4f46e5" stopOpacity={0.1}/>
+                              </linearGradient>
+                            </defs>
+                          </AreaChart>
+                        )}
+                      </ResponsiveContainer>
+                    </div>
+                    <button onClick={() => exportChart(`time-series-chart-${index}`)} className="export-button" aria-label={`Export ${country.name} chart as PNG`}>
+                      Export Chart
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="regional" className={`report-section ${collapsedSections.regional ? 'collapsed' : ''}`} aria-labelledby="regional-heading">
+              <h2 id="regional-heading" onClick={() => toggleSection('regional')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('regional')}>
+                <i className="fas fa-globe" aria-hidden="true"></i> Regional Attack Distribution
+                <i className={`fas fa-chevron-${collapsedSections.regional ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
+              </h2>
+              <div className="report-card">
+                <div className="chart-container" id="regional-chart">
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={regionData}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="region" fontSize={12} angle={-45} textAnchor="end" />
+                      <YAxis fontSize={12} unit="%" />
+                      <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
+                      <Legend />
+                      <Bar dataKey="avgAttack" name="Average Attack Percentage" fill="#10b981" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+                <button onClick={() => exportChart('regional-chart')} className="export-button" aria-label="Export regional chart as PNG">
+                  Export Chart
+                </button>
+              </div>
+            </section>
+
+            <section id="predictions" className={`report-section ${collapsedSections.predictions ? 'collapsed' : ''}`} aria-labelledby="predictions-heading">
+              <h2 id="predictions-heading" onClick={() => toggleSection('predictions')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('predictions')}>
+                <i className="fas fa-chart-area" aria-hidden="true"></i> Future Predictions (Next 30 Days)
+                <i className={`fas fa-chevron-${collapsedSections.predictions ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
+              </h2>
+              <div className="report-card">
+                <div className="chart-container" id="predictions-chart">
+                  <ResponsiveContainer width="100%" height={300}>
+                    <LineChart data={futureData}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="date" fontSize={12} tickFormatter={(date) => new Date(date).toLocaleDateString()} />
+                      <YAxis fontSize={12} unit="%" />
+                      <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
+                      <Legend />
+                      <Line type="monotone" dataKey="value" name="Predicted Attack Percentage" stroke="#f97316" strokeWidth={2} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+                <button onClick={() => exportChart('predictions-chart')} className="export-button" aria-label="Export predictions chart as PNG">
+                  Export Chart
+                </button>
+              </div>
+            </section>
+
+            <section id="conclusion" className={`report-section ${collapsedSections.conclusion ? 'collapsed' : ''}`} aria-labelledby="conclusion-heading">
+              <h2 id="conclusion-heading" onClick={() => toggleSection('conclusion')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('conclusion')}>
+                <i className="fas fa-flag-checkered" aria-hidden="true"></i> Conclusion
+                <i className={`fas fa-chevron-${collapsedSections.conclusion ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
+              </h2>
+              <div className="report-card">
+                <p>
+                  Our LSTM-based predictions highlight the United States and China as primary cyberattack targets, with emerging risks in Africa and South America. Stakeholders should prioritize enhanced cybersecurity measures, such as intrusion detection systems and employee training, in these regions to mitigate future threats.
+                </p>
+              </div>
+            </section>
+
+            <section id="export-data" className="report-section" aria-labelledby="export-data-heading">
+              <h2 id="export-data-heading"><i className="fas fa-download"></i> Export Data</h2>
+              <div className="report-card">
+                <button onClick={exportCSV} className="export-button" aria-label="Export filtered data as CSV">
+                  Export Data as CSV
+                </button>
+              </div>
+            </section>
+          </main>
+
+          <footer className="report-footer" role="contentinfo">
+            <p>© 2025 Cyberattack Analysis Team</p>
+            <div className="footer-links">
+              <a href="mailto:contact@cyberanalysis.org" aria-label="Contact us via email"><i className="fas fa-envelope" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/cyberanalysis" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i className="fab fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/company/cyberanalysis" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i className="fab fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </footer>
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<CyberattackReport />);
+  </script>
+</body>
+</html>

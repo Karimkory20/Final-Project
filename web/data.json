@@ -1,0 +1,6318 @@
+{
+  "countries": [
+    {
+      "name": "United States of America",
+      "data": [
+        {
+          "AttackDate": "2022-10-11",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2022-10-12",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2022-10-13",
+          "Total_Attack_Percentage": 3.4000000000000004
+        },
+        {
+          "AttackDate": "2022-10-14",
+          "Total_Attack_Percentage": 3.55
+        },
+        {
+          "AttackDate": "2022-10-15",
+          "Total_Attack_Percentage": 3.5000000000000004
+        },
+        {
+          "AttackDate": "2022-10-16",
+          "Total_Attack_Percentage": 3.2300000000000004
+        },
+        {
+          "AttackDate": "2022-10-17",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2022-10-18",
+          "Total_Attack_Percentage": 2.74
+        },
+        {
+          "AttackDate": "2022-10-19",
+          "Total_Attack_Percentage": 3.29
+        },
+        {
+          "AttackDate": "2022-10-20",
+          "Total_Attack_Percentage": 3.29
+        },
+        {
+          "AttackDate": "2022-10-21",
+          "Total_Attack_Percentage": 3.1400000000000006
+        },
+        {
+          "AttackDate": "2022-10-22",
+          "Total_Attack_Percentage": 3.27
+        },
+        {
+          "AttackDate": "2022-10-23",
+          "Total_Attack_Percentage": 3.44
+        },
+        {
+          "AttackDate": "2022-10-24",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2022-10-25",
+          "Total_Attack_Percentage": 2.82
+        },
+        {
+          "AttackDate": "2022-10-26",
+          "Total_Attack_Percentage": 3.02
+        },
+        {
+          "AttackDate": "2022-10-27",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2022-10-28",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2022-10-29",
+          "Total_Attack_Percentage": 4.04
+        },
+        {
+          "AttackDate": "2022-10-30",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2022-10-31",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2022-11-01",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2022-11-02",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2022-11-03",
+          "Total_Attack_Percentage": 3.51
+        },
+        {
+          "AttackDate": "2022-11-04",
+          "Total_Attack_Percentage": 3.64
+        },
+        {
+          "AttackDate": "2022-11-05",
+          "Total_Attack_Percentage": 3.02
+        },
+        {
+          "AttackDate": "2022-11-06",
+          "Total_Attack_Percentage": 3.65
+        },
+        {
+          "AttackDate": "2022-11-07",
+          "Total_Attack_Percentage": 2.62
+        },
+        {
+          "AttackDate": "2022-11-08",
+          "Total_Attack_Percentage": 2.65
+        },
+        {
+          "AttackDate": "2022-11-09",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2022-11-10",
+          "Total_Attack_Percentage": 3.55
+        },
+        {
+          "AttackDate": "2022-11-11",
+          "Total_Attack_Percentage": 3.25
+        },
+        {
+          "AttackDate": "2022-11-13",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2022-11-14",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2022-11-15",
+          "Total_Attack_Percentage": 2.77
+        },
+        {
+          "AttackDate": "2022-11-16",
+          "Total_Attack_Percentage": 3.5699999999999994
+        },
+        {
+          "AttackDate": "2022-11-17",
+          "Total_Attack_Percentage": 3.9
+        },
+        {
+          "AttackDate": "2022-11-18",
+          "Total_Attack_Percentage": 3.73
+        },
+        {
+          "AttackDate": "2022-11-19",
+          "Total_Attack_Percentage": 3.9900000000000007
+        },
+        {
+          "AttackDate": "2022-11-21",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2022-11-22",
+          "Total_Attack_Percentage": 3.7000000000000006
+        },
+        {
+          "AttackDate": "2022-11-23",
+          "Total_Attack_Percentage": 3.7000000000000006
+        },
+        {
+          "AttackDate": "2022-11-24",
+          "Total_Attack_Percentage": 3.7000000000000006
+        },
+        {
+          "AttackDate": "2022-11-25",
+          "Total_Attack_Percentage": 3.7000000000000006
+        },
+        {
+          "AttackDate": "2022-11-27",
+          "Total_Attack_Percentage": 3.7699999999999996
+        },
+        {
+          "AttackDate": "2022-11-28",
+          "Total_Attack_Percentage": 3.6699999999999995
+        },
+        {
+          "AttackDate": "2022-11-29",
+          "Total_Attack_Percentage": 3.18
+        },
+        {
+          "AttackDate": "2022-11-30",
+          "Total_Attack_Percentage": 3.84
+        },
+        {
+          "AttackDate": "2022-12-01",
+          "Total_Attack_Percentage": 3.7699999999999996
+        },
+        {
+          "AttackDate": "2022-12-02",
+          "Total_Attack_Percentage": 3.7900000000000005
+        },
+        {
+          "AttackDate": "2022-12-03",
+          "Total_Attack_Percentage": 3.45
+        },
+        {
+          "AttackDate": "2022-12-04",
+          "Total_Attack_Percentage": 3.8599999999999994
+        },
+        {
+          "AttackDate": "2022-12-05",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2022-12-06",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2022-12-07",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2022-12-08",
+          "Total_Attack_Percentage": 2.89
+        },
+        {
+          "AttackDate": "2022-12-09",
+          "Total_Attack_Percentage": 2.8
+        },
+        {
+          "AttackDate": "2022-12-10",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2022-12-11",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2022-12-12",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2022-12-13",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2022-12-14",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2022-12-15",
+          "Total_Attack_Percentage": 3.75
+        },
+        {
+          "AttackDate": "2022-12-16",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2022-12-17",
+          "Total_Attack_Percentage": 3.81
+        },
+        {
+          "AttackDate": "2022-12-18",
+          "Total_Attack_Percentage": 3.46
+        },
+        {
+          "AttackDate": "2022-12-19",
+          "Total_Attack_Percentage": 3.35
+        },
+        {
+          "AttackDate": "2022-12-20",
+          "Total_Attack_Percentage": 2.67
+        },
+        {
+          "AttackDate": "2022-12-21",
+          "Total_Attack_Percentage": 3.47
+        },
+        {
+          "AttackDate": "2022-12-22",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2022-12-23",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2022-12-24",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2022-12-25",
+          "Total_Attack_Percentage": 3.45
+        },
+        {
+          "AttackDate": "2022-12-27",
+          "Total_Attack_Percentage": 2.99
+        },
+        {
+          "AttackDate": "2022-12-28",
+          "Total_Attack_Percentage": 2.99
+        },
+        {
+          "AttackDate": "2022-12-29",
+          "Total_Attack_Percentage": 3.35
+        },
+        {
+          "AttackDate": "2022-12-30",
+          "Total_Attack_Percentage": 3.92
+        },
+        {
+          "AttackDate": "2022-12-31",
+          "Total_Attack_Percentage": 3.92
+        },
+        {
+          "AttackDate": "2023-01-01",
+          "Total_Attack_Percentage": 3.92
+        },
+        {
+          "AttackDate": "2023-01-02",
+          "Total_Attack_Percentage": 3.29
+        },
+        {
+          "AttackDate": "2023-01-03",
+          "Total_Attack_Percentage": 3.5699999999999994
+        },
+        {
+          "AttackDate": "2023-01-04",
+          "Total_Attack_Percentage": 3.44
+        },
+        {
+          "AttackDate": "2023-01-05",
+          "Total_Attack_Percentage": 3.45
+        },
+        {
+          "AttackDate": "2023-01-06",
+          "Total_Attack_Percentage": 3.15
+        },
+        {
+          "AttackDate": "2023-01-07",
+          "Total_Attack_Percentage": 3.71
+        },
+        {
+          "AttackDate": "2023-01-08",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-01-09",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-01-10",
+          "Total_Attack_Percentage": 2.48
+        },
+        {
+          "AttackDate": "2023-01-11",
+          "Total_Attack_Percentage": 2.89
+        },
+        {
+          "AttackDate": "2023-01-12",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2023-01-13",
+          "Total_Attack_Percentage": 3.65
+        },
+        {
+          "AttackDate": "2023-01-14",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-01-15",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2023-01-16",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-01-17",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2023-01-18",
+          "Total_Attack_Percentage": 3.6699999999999995
+        },
+        {
+          "AttackDate": "2023-01-20",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-01-21",
+          "Total_Attack_Percentage": 2.98
+        },
+        {
+          "AttackDate": "2023-01-22",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2023-01-23",
+          "Total_Attack_Percentage": 2.8
+        },
+        {
+          "AttackDate": "2023-01-24",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2023-01-25",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-01-26",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2023-01-27",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-01-28",
+          "Total_Attack_Percentage": 3.95
+        },
+        {
+          "AttackDate": "2023-01-29",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2023-01-30",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2023-01-31",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-02-01",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2023-02-02",
+          "Total_Attack_Percentage": 2.56
+        },
+        {
+          "AttackDate": "2023-02-03",
+          "Total_Attack_Percentage": 2.56
+        },
+        {
+          "AttackDate": "2023-02-04",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-02-05",
+          "Total_Attack_Percentage": 2.74
+        },
+        {
+          "AttackDate": "2023-02-06",
+          "Total_Attack_Percentage": 2.5
+        },
+        {
+          "AttackDate": "2023-02-07",
+          "Total_Attack_Percentage": 2.29
+        },
+        {
+          "AttackDate": "2023-02-08",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-02-09",
+          "Total_Attack_Percentage": 3.71
+        },
+        {
+          "AttackDate": "2023-02-10",
+          "Total_Attack_Percentage": 3.71
+        },
+        {
+          "AttackDate": "2023-02-11",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-02-12",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-02-13",
+          "Total_Attack_Percentage": 2.61
+        },
+        {
+          "AttackDate": "2023-02-14",
+          "Total_Attack_Percentage": 2.6
+        },
+        {
+          "AttackDate": "2023-02-15",
+          "Total_Attack_Percentage": 3.15
+        },
+        {
+          "AttackDate": "2023-02-16",
+          "Total_Attack_Percentage": 2.72
+        },
+        {
+          "AttackDate": "2023-02-17",
+          "Total_Attack_Percentage": 3.62
+        },
+        {
+          "AttackDate": "2023-02-18",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2023-02-19",
+          "Total_Attack_Percentage": 4.0
+        },
+        {
+          "AttackDate": "2023-02-20",
+          "Total_Attack_Percentage": 3.09
+        },
+        {
+          "AttackDate": "2023-02-21",
+          "Total_Attack_Percentage": 3.1400000000000006
+        },
+        {
+          "AttackDate": "2023-02-22",
+          "Total_Attack_Percentage": 3.2
+        },
+        {
+          "AttackDate": "2023-02-23",
+          "Total_Attack_Percentage": 3.2300000000000004
+        },
+        {
+          "AttackDate": "2023-02-24",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-02-25",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2023-02-26",
+          "Total_Attack_Percentage": 3.38
+        },
+        {
+          "AttackDate": "2023-02-27",
+          "Total_Attack_Percentage": 2.62
+        },
+        {
+          "AttackDate": "2023-02-28",
+          "Total_Attack_Percentage": 2.7
+        },
+        {
+          "AttackDate": "2023-03-01",
+          "Total_Attack_Percentage": 3.53
+        },
+        {
+          "AttackDate": "2023-03-02",
+          "Total_Attack_Percentage": 3.5000000000000004
+        },
+        {
+          "AttackDate": "2023-03-03",
+          "Total_Attack_Percentage": 3.49
+        },
+        {
+          "AttackDate": "2023-03-04",
+          "Total_Attack_Percentage": 2.71
+        },
+        {
+          "AttackDate": "2023-03-05",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-03-06",
+          "Total_Attack_Percentage": 2.87
+        },
+        {
+          "AttackDate": "2023-03-07",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-03-08",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2023-03-09",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2023-03-10",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2023-03-11",
+          "Total_Attack_Percentage": 3.32
+        },
+        {
+          "AttackDate": "2023-03-13",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-03-14",
+          "Total_Attack_Percentage": 2.45
+        },
+        {
+          "AttackDate": "2023-03-15",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-03-16",
+          "Total_Attack_Percentage": 3.6799999999999997
+        },
+        {
+          "AttackDate": "2023-03-17",
+          "Total_Attack_Percentage": 3.58
+        },
+        {
+          "AttackDate": "2023-03-18",
+          "Total_Attack_Percentage": 3.51
+        },
+        {
+          "AttackDate": "2023-03-19",
+          "Total_Attack_Percentage": 3.1400000000000006
+        },
+        {
+          "AttackDate": "2023-03-20",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2023-03-21",
+          "Total_Attack_Percentage": 2.85
+        },
+        {
+          "AttackDate": "2023-03-22",
+          "Total_Attack_Percentage": 3.4099999999999997
+        },
+        {
+          "AttackDate": "2023-03-23",
+          "Total_Attack_Percentage": 3.4099999999999997
+        },
+        {
+          "AttackDate": "2023-03-24",
+          "Total_Attack_Percentage": 3.4300000000000006
+        },
+        {
+          "AttackDate": "2023-03-27",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2023-03-28",
+          "Total_Attack_Percentage": 2.56
+        },
+        {
+          "AttackDate": "2023-03-29",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2023-03-30",
+          "Total_Attack_Percentage": 3.29
+        },
+        {
+          "AttackDate": "2023-03-31",
+          "Total_Attack_Percentage": 2.89
+        },
+        {
+          "AttackDate": "2023-04-01",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-04-02",
+          "Total_Attack_Percentage": 3.3099999999999996
+        },
+        {
+          "AttackDate": "2023-04-03",
+          "Total_Attack_Percentage": 2.47
+        },
+        {
+          "AttackDate": "2023-04-04",
+          "Total_Attack_Percentage": 2.41
+        },
+        {
+          "AttackDate": "2023-04-05",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-04-06",
+          "Total_Attack_Percentage": 2.96
+        },
+        {
+          "AttackDate": "2023-04-07",
+          "Total_Attack_Percentage": 3.39
+        },
+        {
+          "AttackDate": "2023-04-08",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-04-09",
+          "Total_Attack_Percentage": 3.2
+        },
+        {
+          "AttackDate": "2023-04-10",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-04-11",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2023-04-12",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-04-13",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-04-14",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-04-15",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2023-04-16",
+          "Total_Attack_Percentage": 3.32
+        },
+        {
+          "AttackDate": "2023-04-17",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-04-18",
+          "Total_Attack_Percentage": 2.88
+        },
+        {
+          "AttackDate": "2023-04-19",
+          "Total_Attack_Percentage": 3.92
+        },
+        {
+          "AttackDate": "2023-04-20",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2023-04-21",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2023-04-22",
+          "Total_Attack_Percentage": 3.56
+        },
+        {
+          "AttackDate": "2023-04-23",
+          "Total_Attack_Percentage": 2.91
+        },
+        {
+          "AttackDate": "2023-04-24",
+          "Total_Attack_Percentage": 3.2199999999999998
+        },
+        {
+          "AttackDate": "2023-04-25",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2023-04-26",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2023-04-27",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2023-04-28",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-04-29",
+          "Total_Attack_Percentage": 3.92
+        },
+        {
+          "AttackDate": "2023-04-30",
+          "Total_Attack_Percentage": 3.93
+        },
+        {
+          "AttackDate": "2023-05-01",
+          "Total_Attack_Percentage": 3.7800000000000002
+        },
+        {
+          "AttackDate": "2023-05-02",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2023-05-03",
+          "Total_Attack_Percentage": 3.7699999999999996
+        },
+        {
+          "AttackDate": "2023-05-04",
+          "Total_Attack_Percentage": 3.46
+        },
+        {
+          "AttackDate": "2023-05-06",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-05-07",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-05-08",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-05-09",
+          "Total_Attack_Percentage": 3.58
+        },
+        {
+          "AttackDate": "2023-05-10",
+          "Total_Attack_Percentage": 3.72
+        },
+        {
+          "AttackDate": "2023-05-12",
+          "Total_Attack_Percentage": 3.53
+        },
+        {
+          "AttackDate": "2023-05-13",
+          "Total_Attack_Percentage": 3.51
+        },
+        {
+          "AttackDate": "2023-05-14",
+          "Total_Attack_Percentage": 2.75
+        },
+        {
+          "AttackDate": "2023-05-15",
+          "Total_Attack_Percentage": 2.8
+        },
+        {
+          "AttackDate": "2023-05-16",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2023-05-17",
+          "Total_Attack_Percentage": 0.39
+        },
+        {
+          "AttackDate": "2023-05-18",
+          "Total_Attack_Percentage": 2.91
+        },
+        {
+          "AttackDate": "2023-05-19",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2023-05-20",
+          "Total_Attack_Percentage": 2.67
+        },
+        {
+          "AttackDate": "2023-05-21",
+          "Total_Attack_Percentage": 2.96
+        },
+        {
+          "AttackDate": "2023-05-22",
+          "Total_Attack_Percentage": 3.32
+        },
+        {
+          "AttackDate": "2023-05-23",
+          "Total_Attack_Percentage": 2.04
+        },
+        {
+          "AttackDate": "2023-05-24",
+          "Total_Attack_Percentage": 0.3
+        },
+        {
+          "AttackDate": "2023-05-25",
+          "Total_Attack_Percentage": 3.9599999999999995
+        },
+        {
+          "AttackDate": "2023-05-26",
+          "Total_Attack_Percentage": 3.8900000000000006
+        },
+        {
+          "AttackDate": "2023-05-27",
+          "Total_Attack_Percentage": 3.56
+        },
+        {
+          "AttackDate": "2023-05-28",
+          "Total_Attack_Percentage": 4.13
+        },
+        {
+          "AttackDate": "2023-05-29",
+          "Total_Attack_Percentage": 3.95
+        },
+        {
+          "AttackDate": "2023-05-30",
+          "Total_Attack_Percentage": 3.8699999999999997
+        },
+        {
+          "AttackDate": "2023-05-31",
+          "Total_Attack_Percentage": 3.66
+        },
+        {
+          "AttackDate": "2023-06-01",
+          "Total_Attack_Percentage": 3.72
+        },
+        {
+          "AttackDate": "2023-06-02",
+          "Total_Attack_Percentage": 3.25
+        },
+        {
+          "AttackDate": "2023-06-03",
+          "Total_Attack_Percentage": 0.37
+        },
+        {
+          "AttackDate": "2023-06-04",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-06-05",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-06-06",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-06-07",
+          "Total_Attack_Percentage": 4.03
+        },
+        {
+          "AttackDate": "2023-06-08",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-06-09",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-06-10",
+          "Total_Attack_Percentage": 4.76
+        },
+        {
+          "AttackDate": "2023-06-11",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2023-06-12",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2023-06-15",
+          "Total_Attack_Percentage": 3.4000000000000004
+        },
+        {
+          "AttackDate": "2023-06-16",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2023-06-17",
+          "Total_Attack_Percentage": 3.61
+        },
+        {
+          "AttackDate": "2023-06-18",
+          "Total_Attack_Percentage": 7.01
+        },
+        {
+          "AttackDate": "2023-06-19",
+          "Total_Attack_Percentage": 3.51
+        },
+        {
+          "AttackDate": "2023-06-20",
+          "Total_Attack_Percentage": 3.6000000000000005
+        },
+        {
+          "AttackDate": "2023-06-21",
+          "Total_Attack_Percentage": 3.35
+        },
+        {
+          "AttackDate": "2023-06-22",
+          "Total_Attack_Percentage": 2.87
+        },
+        {
+          "AttackDate": "2023-06-23",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-06-24",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-06-25",
+          "Total_Attack_Percentage": 4.16
+        },
+        {
+          "AttackDate": "2023-06-26",
+          "Total_Attack_Percentage": 3.9699999999999998
+        },
+        {
+          "AttackDate": "2023-06-27",
+          "Total_Attack_Percentage": 3.74
+        },
+        {
+          "AttackDate": "2023-06-28",
+          "Total_Attack_Percentage": 8.94
+        },
+        {
+          "AttackDate": "2023-06-29",
+          "Total_Attack_Percentage": 3.66
+        },
+        {
+          "AttackDate": "2023-07-03",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-07-04",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2023-07-05",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2023-07-06",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-07-07",
+          "Total_Attack_Percentage": 2.55
+        },
+        {
+          "AttackDate": "2023-07-08",
+          "Total_Attack_Percentage": 2.85
+        },
+        {
+          "AttackDate": "2023-07-09",
+          "Total_Attack_Percentage": 3.2400000000000007
+        },
+        {
+          "AttackDate": "2023-07-10",
+          "Total_Attack_Percentage": 3.1
+        },
+        {
+          "AttackDate": "2023-07-11",
+          "Total_Attack_Percentage": 2.46
+        },
+        {
+          "AttackDate": "2023-07-12",
+          "Total_Attack_Percentage": 3.4000000000000004
+        },
+        {
+          "AttackDate": "2023-07-13",
+          "Total_Attack_Percentage": 3.5699999999999994
+        },
+        {
+          "AttackDate": "2023-07-14",
+          "Total_Attack_Percentage": 3.63
+        },
+        {
+          "AttackDate": "2023-07-15",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-07-16",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-07-17",
+          "Total_Attack_Percentage": 4.41
+        },
+        {
+          "AttackDate": "2023-07-18",
+          "Total_Attack_Percentage": 3.83
+        },
+        {
+          "AttackDate": "2023-07-19",
+          "Total_Attack_Percentage": 3.58
+        },
+        {
+          "AttackDate": "2023-07-20",
+          "Total_Attack_Percentage": 3.4099999999999997
+        },
+        {
+          "AttackDate": "2023-07-21",
+          "Total_Attack_Percentage": 3.74
+        },
+        {
+          "AttackDate": "2023-07-22",
+          "Total_Attack_Percentage": 3.74
+        },
+        {
+          "AttackDate": "2023-07-23",
+          "Total_Attack_Percentage": 3.2
+        },
+        {
+          "AttackDate": "2023-07-24",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2023-07-25",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-07-26",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-07-27",
+          "Total_Attack_Percentage": 3.49
+        },
+        {
+          "AttackDate": "2023-07-28",
+          "Total_Attack_Percentage": 3.63
+        },
+        {
+          "AttackDate": "2023-07-29",
+          "Total_Attack_Percentage": 0.14
+        },
+        {
+          "AttackDate": "2023-07-31",
+          "Total_Attack_Percentage": 2.63
+        },
+        {
+          "AttackDate": "2023-08-01",
+          "Total_Attack_Percentage": 2.63
+        },
+        {
+          "AttackDate": "2023-08-02",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2023-08-03",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2023-08-04",
+          "Total_Attack_Percentage": 3.3000000000000003
+        },
+        {
+          "AttackDate": "2023-08-07",
+          "Total_Attack_Percentage": 3.4099999999999997
+        },
+        {
+          "AttackDate": "2023-08-08",
+          "Total_Attack_Percentage": 2.32
+        },
+        {
+          "AttackDate": "2023-08-09",
+          "Total_Attack_Percentage": 5.03
+        },
+        {
+          "AttackDate": "2023-08-10",
+          "Total_Attack_Percentage": 3.49
+        },
+        {
+          "AttackDate": "2023-08-11",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2023-08-12",
+          "Total_Attack_Percentage": 2.79
+        },
+        {
+          "AttackDate": "2023-08-13",
+          "Total_Attack_Percentage": 2.5
+        },
+        {
+          "AttackDate": "2023-08-14",
+          "Total_Attack_Percentage": 2.68
+        },
+        {
+          "AttackDate": "2023-08-15",
+          "Total_Attack_Percentage": 2.33
+        },
+        {
+          "AttackDate": "2023-08-16",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-08-17",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-08-18",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2023-08-19",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2023-08-20",
+          "Total_Attack_Percentage": 3.4300000000000006
+        },
+        {
+          "AttackDate": "2023-08-21",
+          "Total_Attack_Percentage": 4.18
+        },
+        {
+          "AttackDate": "2023-08-28",
+          "Total_Attack_Percentage": 2.57
+        },
+        {
+          "AttackDate": "2023-08-29",
+          "Total_Attack_Percentage": 2.57
+        },
+        {
+          "AttackDate": "2023-08-30",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-08-31",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-09-01",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-09-04",
+          "Total_Attack_Percentage": 2.88
+        },
+        {
+          "AttackDate": "2023-09-05",
+          "Total_Attack_Percentage": 2.41
+        },
+        {
+          "AttackDate": "2023-09-06",
+          "Total_Attack_Percentage": 2.63
+        },
+        {
+          "AttackDate": "2023-09-07",
+          "Total_Attack_Percentage": 2.91
+        },
+        {
+          "AttackDate": "2023-09-08",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-09-09",
+          "Total_Attack_Percentage": 3.91
+        },
+        {
+          "AttackDate": "2023-09-10",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2023-09-11",
+          "Total_Attack_Percentage": 3.6000000000000005
+        },
+        {
+          "AttackDate": "2023-09-12",
+          "Total_Attack_Percentage": 2.78
+        },
+        {
+          "AttackDate": "2023-09-13",
+          "Total_Attack_Percentage": 2.78
+        },
+        {
+          "AttackDate": "2023-09-15",
+          "Total_Attack_Percentage": 2.78
+        },
+        {
+          "AttackDate": "2023-09-16",
+          "Total_Attack_Percentage": 4.69
+        },
+        {
+          "AttackDate": "2023-09-18",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2023-09-19",
+          "Total_Attack_Percentage": 2.79
+        },
+        {
+          "AttackDate": "2023-09-20",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-09-21",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-09-22",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-09-23",
+          "Total_Attack_Percentage": 4.52
+        },
+        {
+          "AttackDate": "2023-09-24",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-09-25",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2023-09-26",
+          "Total_Attack_Percentage": 2.51
+        },
+        {
+          "AttackDate": "2023-09-27",
+          "Total_Attack_Percentage": 3.39
+        },
+        {
+          "AttackDate": "2023-09-28",
+          "Total_Attack_Percentage": 3.9
+        },
+        {
+          "AttackDate": "2023-10-02",
+          "Total_Attack_Percentage": 2.6
+        },
+        {
+          "AttackDate": "2023-10-03",
+          "Total_Attack_Percentage": 2.6
+        },
+        {
+          "AttackDate": "2023-10-04",
+          "Total_Attack_Percentage": 3.36
+        },
+        {
+          "AttackDate": "2023-10-05",
+          "Total_Attack_Percentage": 3.84
+        },
+        {
+          "AttackDate": "2023-10-06",
+          "Total_Attack_Percentage": 3.91
+        },
+        {
+          "AttackDate": "2023-10-07",
+          "Total_Attack_Percentage": 3.91
+        },
+        {
+          "AttackDate": "2023-10-08",
+          "Total_Attack_Percentage": 3.71
+        },
+        {
+          "AttackDate": "2023-10-09",
+          "Total_Attack_Percentage": 2.91
+        },
+        {
+          "AttackDate": "2023-10-10",
+          "Total_Attack_Percentage": 2.77
+        },
+        {
+          "AttackDate": "2023-10-11",
+          "Total_Attack_Percentage": 3.25
+        },
+        {
+          "AttackDate": "2023-10-12",
+          "Total_Attack_Percentage": 3.2400000000000007
+        },
+        {
+          "AttackDate": "2023-10-13",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2023-10-14",
+          "Total_Attack_Percentage": 2.83
+        },
+        {
+          "AttackDate": "2023-10-15",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2023-10-16",
+          "Total_Attack_Percentage": 3.18
+        },
+        {
+          "AttackDate": "2023-10-17",
+          "Total_Attack_Percentage": 2.11
+        },
+        {
+          "AttackDate": "2023-10-18",
+          "Total_Attack_Percentage": 2.11
+        },
+        {
+          "AttackDate": "2023-10-19",
+          "Total_Attack_Percentage": 3.4000000000000004
+        },
+        {
+          "AttackDate": "2023-10-20",
+          "Total_Attack_Percentage": 3.65
+        },
+        {
+          "AttackDate": "2023-10-21",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-10-22",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-10-26",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-10-27",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-10-28",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-10-29",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-10-30",
+          "Total_Attack_Percentage": 2.63
+        },
+        {
+          "AttackDate": "2023-10-31",
+          "Total_Attack_Percentage": 2.64
+        },
+        {
+          "AttackDate": "2023-11-01",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-11-02",
+          "Total_Attack_Percentage": 3.17
+        },
+        {
+          "AttackDate": "2023-11-03",
+          "Total_Attack_Percentage": 2.75
+        },
+        {
+          "AttackDate": "2023-11-04",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-11-05",
+          "Total_Attack_Percentage": 3.3000000000000003
+        },
+        {
+          "AttackDate": "2023-11-06",
+          "Total_Attack_Percentage": 2.3
+        },
+        {
+          "AttackDate": "2023-11-07",
+          "Total_Attack_Percentage": 2.08
+        },
+        {
+          "AttackDate": "2023-11-09",
+          "Total_Attack_Percentage": 2.64
+        },
+        {
+          "AttackDate": "2023-11-10",
+          "Total_Attack_Percentage": 2.64
+        },
+        {
+          "AttackDate": "2023-11-11",
+          "Total_Attack_Percentage": 2.81
+        },
+        {
+          "AttackDate": "2023-11-12",
+          "Total_Attack_Percentage": 2.56
+        },
+        {
+          "AttackDate": "2023-11-13",
+          "Total_Attack_Percentage": 2.29
+        },
+        {
+          "AttackDate": "2023-11-14",
+          "Total_Attack_Percentage": 2.05
+        },
+        {
+          "AttackDate": "2023-11-15",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2023-11-16",
+          "Total_Attack_Percentage": 5.17
+        },
+        {
+          "AttackDate": "2023-11-17",
+          "Total_Attack_Percentage": 3.3000000000000003
+        },
+        {
+          "AttackDate": "2023-11-18",
+          "Total_Attack_Percentage": 2.75
+        },
+        {
+          "AttackDate": "2023-11-19",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-11-20",
+          "Total_Attack_Percentage": 3.27
+        },
+        {
+          "AttackDate": "2023-11-21",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-11-22",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2023-11-23",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-11-24",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2023-11-25",
+          "Total_Attack_Percentage": 3.2300000000000004
+        },
+        {
+          "AttackDate": "2023-11-26",
+          "Total_Attack_Percentage": 3.09
+        },
+        {
+          "AttackDate": "2023-11-27",
+          "Total_Attack_Percentage": 2.57
+        },
+        {
+          "AttackDate": "2023-11-28",
+          "Total_Attack_Percentage": 2.29
+        },
+        {
+          "AttackDate": "2023-11-29",
+          "Total_Attack_Percentage": 2.78
+        },
+        {
+          "AttackDate": "2023-11-30",
+          "Total_Attack_Percentage": 2.55
+        },
+        {
+          "AttackDate": "2023-12-01",
+          "Total_Attack_Percentage": 2.66
+        },
+        {
+          "AttackDate": "2023-12-02",
+          "Total_Attack_Percentage": 2.52
+        },
+        {
+          "AttackDate": "2023-12-03",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-12-04",
+          "Total_Attack_Percentage": 2.71
+        },
+        {
+          "AttackDate": "2023-12-05",
+          "Total_Attack_Percentage": 2.43
+        },
+        {
+          "AttackDate": "2023-12-06",
+          "Total_Attack_Percentage": 2.65
+        },
+        {
+          "AttackDate": "2023-12-07",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-12-08",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-12-09",
+          "Total_Attack_Percentage": 2.97
+        },
+        {
+          "AttackDate": "2023-12-10",
+          "Total_Attack_Percentage": 2.44
+        },
+        {
+          "AttackDate": "2023-12-11",
+          "Total_Attack_Percentage": 3.03
+        }
+      ]
+    },
+    {
+      "name": "People's Republic of China",
+      "data": [
+        {
+          "AttackDate": "2022-10-11",
+          "Total_Attack_Percentage": 3.2400000000000007
+        },
+        {
+          "AttackDate": "2022-10-12",
+          "Total_Attack_Percentage": 3.2400000000000007
+        },
+        {
+          "AttackDate": "2022-10-13",
+          "Total_Attack_Percentage": 3.26
+        },
+        {
+          "AttackDate": "2022-10-14",
+          "Total_Attack_Percentage": 3.3300000000000005
+        },
+        {
+          "AttackDate": "2022-10-15",
+          "Total_Attack_Percentage": 3.27
+        },
+        {
+          "AttackDate": "2022-10-16",
+          "Total_Attack_Percentage": 3.42
+        },
+        {
+          "AttackDate": "2022-10-17",
+          "Total_Attack_Percentage": 3.81
+        },
+        {
+          "AttackDate": "2022-10-18",
+          "Total_Attack_Percentage": 4.11
+        },
+        {
+          "AttackDate": "2022-10-19",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2022-10-20",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2022-10-21",
+          "Total_Attack_Percentage": 2.98
+        },
+        {
+          "AttackDate": "2022-10-22",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2022-10-23",
+          "Total_Attack_Percentage": 3.7699999999999996
+        },
+        {
+          "AttackDate": "2022-10-24",
+          "Total_Attack_Percentage": 4.03
+        },
+        {
+          "AttackDate": "2022-10-25",
+          "Total_Attack_Percentage": 3.83
+        },
+        {
+          "AttackDate": "2022-10-26",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2022-10-27",
+          "Total_Attack_Percentage": 2.98
+        },
+        {
+          "AttackDate": "2022-10-28",
+          "Total_Attack_Percentage": 3.3000000000000003
+        },
+        {
+          "AttackDate": "2022-10-29",
+          "Total_Attack_Percentage": 3.75
+        },
+        {
+          "AttackDate": "2022-10-30",
+          "Total_Attack_Percentage": 3.82
+        },
+        {
+          "AttackDate": "2022-10-31",
+          "Total_Attack_Percentage": 3.9
+        },
+        {
+          "AttackDate": "2022-11-01",
+          "Total_Attack_Percentage": 3.8
+        },
+        {
+          "AttackDate": "2022-11-02",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2022-11-03",
+          "Total_Attack_Percentage": 3.49
+        },
+        {
+          "AttackDate": "2022-11-04",
+          "Total_Attack_Percentage": 3.17
+        },
+        {
+          "AttackDate": "2022-11-05",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2022-11-06",
+          "Total_Attack_Percentage": 3.38
+        },
+        {
+          "AttackDate": "2022-11-07",
+          "Total_Attack_Percentage": 2.73
+        },
+        {
+          "AttackDate": "2022-11-08",
+          "Total_Attack_Percentage": 2.8
+        },
+        {
+          "AttackDate": "2022-11-09",
+          "Total_Attack_Percentage": 2.8
+        },
+        {
+          "AttackDate": "2022-11-10",
+          "Total_Attack_Percentage": 2.89
+        },
+        {
+          "AttackDate": "2022-11-11",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2022-11-13",
+          "Total_Attack_Percentage": 3.35
+        },
+        {
+          "AttackDate": "2022-11-14",
+          "Total_Attack_Percentage": 3.6900000000000004
+        },
+        {
+          "AttackDate": "2022-11-15",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2022-11-16",
+          "Total_Attack_Percentage": 3.1
+        },
+        {
+          "AttackDate": "2022-11-17",
+          "Total_Attack_Percentage": 3.38
+        },
+        {
+          "AttackDate": "2022-11-18",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2022-11-19",
+          "Total_Attack_Percentage": 3.49
+        },
+        {
+          "AttackDate": "2022-11-21",
+          "Total_Attack_Percentage": 3.1
+        },
+        {
+          "AttackDate": "2022-11-22",
+          "Total_Attack_Percentage": 3.73
+        },
+        {
+          "AttackDate": "2022-11-23",
+          "Total_Attack_Percentage": 3.73
+        },
+        {
+          "AttackDate": "2022-11-24",
+          "Total_Attack_Percentage": 3.73
+        },
+        {
+          "AttackDate": "2022-11-25",
+          "Total_Attack_Percentage": 3.73
+        },
+        {
+          "AttackDate": "2022-11-27",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2022-11-28",
+          "Total_Attack_Percentage": 3.5900000000000003
+        },
+        {
+          "AttackDate": "2022-11-29",
+          "Total_Attack_Percentage": 4.18
+        },
+        {
+          "AttackDate": "2022-11-30",
+          "Total_Attack_Percentage": 3.2199999999999998
+        },
+        {
+          "AttackDate": "2022-12-01",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2022-12-02",
+          "Total_Attack_Percentage": 3.3000000000000003
+        },
+        {
+          "AttackDate": "2022-12-03",
+          "Total_Attack_Percentage": 3.2300000000000004
+        },
+        {
+          "AttackDate": "2022-12-04",
+          "Total_Attack_Percentage": 4.31
+        },
+        {
+          "AttackDate": "2022-12-05",
+          "Total_Attack_Percentage": 4.25
+        },
+        {
+          "AttackDate": "2022-12-06",
+          "Total_Attack_Percentage": 3.9900000000000007
+        },
+        {
+          "AttackDate": "2022-12-07",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2022-12-08",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2022-12-09",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2022-12-10",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2022-12-11",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2022-12-12",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2022-12-13",
+          "Total_Attack_Percentage": 3.7699999999999996
+        },
+        {
+          "AttackDate": "2022-12-14",
+          "Total_Attack_Percentage": 3.4000000000000004
+        },
+        {
+          "AttackDate": "2022-12-15",
+          "Total_Attack_Percentage": 2.94
+        },
+        {
+          "AttackDate": "2022-12-16",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2022-12-17",
+          "Total_Attack_Percentage": 2.96
+        },
+        {
+          "AttackDate": "2022-12-18",
+          "Total_Attack_Percentage": 3.3300000000000005
+        },
+        {
+          "AttackDate": "2022-12-19",
+          "Total_Attack_Percentage": 4.03
+        },
+        {
+          "AttackDate": "2022-12-20",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2022-12-21",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2022-12-22",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2022-12-23",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2022-12-24",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2022-12-25",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2022-12-27",
+          "Total_Attack_Percentage": 4.22
+        },
+        {
+          "AttackDate": "2022-12-28",
+          "Total_Attack_Percentage": 4.22
+        },
+        {
+          "AttackDate": "2022-12-29",
+          "Total_Attack_Percentage": 3.56
+        },
+        {
+          "AttackDate": "2022-12-30",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2022-12-31",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2023-01-01",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2023-01-02",
+          "Total_Attack_Percentage": 3.45
+        },
+        {
+          "AttackDate": "2023-01-03",
+          "Total_Attack_Percentage": 4.02
+        },
+        {
+          "AttackDate": "2023-01-04",
+          "Total_Attack_Percentage": 3.2
+        },
+        {
+          "AttackDate": "2023-01-05",
+          "Total_Attack_Percentage": 3.47
+        },
+        {
+          "AttackDate": "2023-01-06",
+          "Total_Attack_Percentage": 3.35
+        },
+        {
+          "AttackDate": "2023-01-07",
+          "Total_Attack_Percentage": 4.05
+        },
+        {
+          "AttackDate": "2023-01-08",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-01-09",
+          "Total_Attack_Percentage": 3.61
+        },
+        {
+          "AttackDate": "2023-01-10",
+          "Total_Attack_Percentage": 3.94
+        },
+        {
+          "AttackDate": "2023-01-11",
+          "Total_Attack_Percentage": 2.78
+        },
+        {
+          "AttackDate": "2023-01-12",
+          "Total_Attack_Percentage": 2.77
+        },
+        {
+          "AttackDate": "2023-01-13",
+          "Total_Attack_Percentage": 3.2300000000000004
+        },
+        {
+          "AttackDate": "2023-01-14",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2023-01-15",
+          "Total_Attack_Percentage": 2.84
+        },
+        {
+          "AttackDate": "2023-01-16",
+          "Total_Attack_Percentage": 3.58
+        },
+        {
+          "AttackDate": "2023-01-17",
+          "Total_Attack_Percentage": 3.1
+        },
+        {
+          "AttackDate": "2023-01-18",
+          "Total_Attack_Percentage": 2.49
+        },
+        {
+          "AttackDate": "2023-01-20",
+          "Total_Attack_Percentage": 2.43
+        },
+        {
+          "AttackDate": "2023-01-21",
+          "Total_Attack_Percentage": 2.25
+        },
+        {
+          "AttackDate": "2023-01-22",
+          "Total_Attack_Percentage": 2.18
+        },
+        {
+          "AttackDate": "2023-01-23",
+          "Total_Attack_Percentage": 2.78
+        },
+        {
+          "AttackDate": "2023-01-24",
+          "Total_Attack_Percentage": 2.23
+        },
+        {
+          "AttackDate": "2023-01-25",
+          "Total_Attack_Percentage": 1.67
+        },
+        {
+          "AttackDate": "2023-01-26",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-01-27",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-01-28",
+          "Total_Attack_Percentage": 2.18
+        },
+        {
+          "AttackDate": "2023-01-29",
+          "Total_Attack_Percentage": 2.07
+        },
+        {
+          "AttackDate": "2023-01-30",
+          "Total_Attack_Percentage": 2.07
+        },
+        {
+          "AttackDate": "2023-01-31",
+          "Total_Attack_Percentage": 3.32
+        },
+        {
+          "AttackDate": "2023-02-01",
+          "Total_Attack_Percentage": 2.6
+        },
+        {
+          "AttackDate": "2023-02-02",
+          "Total_Attack_Percentage": 2.52
+        },
+        {
+          "AttackDate": "2023-02-03",
+          "Total_Attack_Percentage": 2.52
+        },
+        {
+          "AttackDate": "2023-02-04",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-02-05",
+          "Total_Attack_Percentage": 2.88
+        },
+        {
+          "AttackDate": "2023-02-06",
+          "Total_Attack_Percentage": 2.83
+        },
+        {
+          "AttackDate": "2023-02-07",
+          "Total_Attack_Percentage": 2.58
+        },
+        {
+          "AttackDate": "2023-02-08",
+          "Total_Attack_Percentage": 3.07
+        },
+        {
+          "AttackDate": "2023-02-09",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-02-10",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-02-11",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-02-12",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-02-13",
+          "Total_Attack_Percentage": 3.46
+        },
+        {
+          "AttackDate": "2023-02-14",
+          "Total_Attack_Percentage": 3.35
+        },
+        {
+          "AttackDate": "2023-02-15",
+          "Total_Attack_Percentage": 3.1
+        },
+        {
+          "AttackDate": "2023-02-16",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2023-02-17",
+          "Total_Attack_Percentage": 3.03
+        },
+        {
+          "AttackDate": "2023-02-18",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2023-02-19",
+          "Total_Attack_Percentage": 3.81
+        },
+        {
+          "AttackDate": "2023-02-20",
+          "Total_Attack_Percentage": 3.64
+        },
+        {
+          "AttackDate": "2023-02-21",
+          "Total_Attack_Percentage": 3.5000000000000004
+        },
+        {
+          "AttackDate": "2023-02-22",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-02-23",
+          "Total_Attack_Percentage": 2.88
+        },
+        {
+          "AttackDate": "2023-02-24",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-02-25",
+          "Total_Attack_Percentage": 3.32
+        },
+        {
+          "AttackDate": "2023-02-26",
+          "Total_Attack_Percentage": 3.27
+        },
+        {
+          "AttackDate": "2023-02-27",
+          "Total_Attack_Percentage": 2.89
+        },
+        {
+          "AttackDate": "2023-02-28",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-03-01",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-03-02",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-03-03",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-03-04",
+          "Total_Attack_Percentage": 2.59
+        },
+        {
+          "AttackDate": "2023-03-05",
+          "Total_Attack_Percentage": 2.82
+        },
+        {
+          "AttackDate": "2023-03-06",
+          "Total_Attack_Percentage": 3.02
+        },
+        {
+          "AttackDate": "2023-03-07",
+          "Total_Attack_Percentage": 3.12
+        },
+        {
+          "AttackDate": "2023-03-08",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-03-09",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2023-03-10",
+          "Total_Attack_Percentage": 3.2799999999999994
+        },
+        {
+          "AttackDate": "2023-03-11",
+          "Total_Attack_Percentage": 3.2
+        },
+        {
+          "AttackDate": "2023-03-13",
+          "Total_Attack_Percentage": 3.26
+        },
+        {
+          "AttackDate": "2023-03-14",
+          "Total_Attack_Percentage": 3.27
+        },
+        {
+          "AttackDate": "2023-03-15",
+          "Total_Attack_Percentage": 2.79
+        },
+        {
+          "AttackDate": "2023-03-16",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-03-17",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2023-03-18",
+          "Total_Attack_Percentage": 3.3300000000000005
+        },
+        {
+          "AttackDate": "2023-03-19",
+          "Total_Attack_Percentage": 3.53
+        },
+        {
+          "AttackDate": "2023-03-20",
+          "Total_Attack_Percentage": 3.63
+        },
+        {
+          "AttackDate": "2023-03-21",
+          "Total_Attack_Percentage": 3.6900000000000004
+        },
+        {
+          "AttackDate": "2023-03-22",
+          "Total_Attack_Percentage": 3.25
+        },
+        {
+          "AttackDate": "2023-03-23",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2023-03-24",
+          "Total_Attack_Percentage": 3.18
+        },
+        {
+          "AttackDate": "2023-03-27",
+          "Total_Attack_Percentage": 3.95
+        },
+        {
+          "AttackDate": "2023-03-28",
+          "Total_Attack_Percentage": 3.7800000000000002
+        },
+        {
+          "AttackDate": "2023-03-29",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-03-30",
+          "Total_Attack_Percentage": 3.34
+        },
+        {
+          "AttackDate": "2023-03-31",
+          "Total_Attack_Percentage": 3.08
+        },
+        {
+          "AttackDate": "2023-04-01",
+          "Total_Attack_Percentage": 3.2099999999999995
+        },
+        {
+          "AttackDate": "2023-04-02",
+          "Total_Attack_Percentage": 3.63
+        },
+        {
+          "AttackDate": "2023-04-03",
+          "Total_Attack_Percentage": 3.9800000000000004
+        },
+        {
+          "AttackDate": "2023-04-04",
+          "Total_Attack_Percentage": 3.2
+        },
+        {
+          "AttackDate": "2023-04-05",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2023-04-06",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-04-07",
+          "Total_Attack_Percentage": 2.95
+        },
+        {
+          "AttackDate": "2023-04-08",
+          "Total_Attack_Percentage": 3.4099999999999997
+        },
+        {
+          "AttackDate": "2023-04-09",
+          "Total_Attack_Percentage": 3.84
+        },
+        {
+          "AttackDate": "2023-04-10",
+          "Total_Attack_Percentage": 3.66
+        },
+        {
+          "AttackDate": "2023-04-11",
+          "Total_Attack_Percentage": 3.75
+        },
+        {
+          "AttackDate": "2023-04-12",
+          "Total_Attack_Percentage": 3.54
+        },
+        {
+          "AttackDate": "2023-04-13",
+          "Total_Attack_Percentage": 3.39
+        },
+        {
+          "AttackDate": "2023-04-14",
+          "Total_Attack_Percentage": 3.6699999999999995
+        },
+        {
+          "AttackDate": "2023-04-15",
+          "Total_Attack_Percentage": 3.5000000000000004
+        },
+        {
+          "AttackDate": "2023-04-16",
+          "Total_Attack_Percentage": 3.8
+        },
+        {
+          "AttackDate": "2023-04-17",
+          "Total_Attack_Percentage": 3.9800000000000004
+        },
+        {
+          "AttackDate": "2023-04-18",
+          "Total_Attack_Percentage": 3.9
+        },
+        {
+          "AttackDate": "2023-04-19",
+          "Total_Attack_Percentage": 3.8900000000000006
+        },
+        {
+          "AttackDate": "2023-04-20",
+          "Total_Attack_Percentage": 3.38
+        },
+        {
+          "AttackDate": "2023-04-21",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2023-04-22",
+          "Total_Attack_Percentage": 3.5699999999999994
+        },
+        {
+          "AttackDate": "2023-04-23",
+          "Total_Attack_Percentage": 3.91
+        },
+        {
+          "AttackDate": "2023-04-24",
+          "Total_Attack_Percentage": 4.34
+        },
+        {
+          "AttackDate": "2023-04-25",
+          "Total_Attack_Percentage": 4.25
+        },
+        {
+          "AttackDate": "2023-04-26",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2023-04-27",
+          "Total_Attack_Percentage": 3.2400000000000007
+        },
+        {
+          "AttackDate": "2023-04-28",
+          "Total_Attack_Percentage": 3.3300000000000005
+        },
+        {
+          "AttackDate": "2023-04-29",
+          "Total_Attack_Percentage": 2.99
+        },
+        {
+          "AttackDate": "2023-04-30",
+          "Total_Attack_Percentage": 2.91
+        },
+        {
+          "AttackDate": "2023-05-01",
+          "Total_Attack_Percentage": 3.4799999999999995
+        },
+        {
+          "AttackDate": "2023-05-02",
+          "Total_Attack_Percentage": 3.39
+        },
+        {
+          "AttackDate": "2023-05-03",
+          "Total_Attack_Percentage": 2.54
+        },
+        {
+          "AttackDate": "2023-05-04",
+          "Total_Attack_Percentage": 2.0
+        },
+        {
+          "AttackDate": "2023-05-06",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2023-05-07",
+          "Total_Attack_Percentage": 3.37
+        },
+        {
+          "AttackDate": "2023-05-08",
+          "Total_Attack_Percentage": 3.75
+        },
+        {
+          "AttackDate": "2023-05-09",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-05-10",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-05-12",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2023-05-13",
+          "Total_Attack_Percentage": 2.8
+        },
+        {
+          "AttackDate": "2023-05-14",
+          "Total_Attack_Percentage": 2.53
+        },
+        {
+          "AttackDate": "2023-05-15",
+          "Total_Attack_Percentage": 2.68
+        },
+        {
+          "AttackDate": "2023-05-16",
+          "Total_Attack_Percentage": 3.1400000000000006
+        },
+        {
+          "AttackDate": "2023-05-17",
+          "Total_Attack_Percentage": 0.98
+        },
+        {
+          "AttackDate": "2023-05-18",
+          "Total_Attack_Percentage": 2.58
+        },
+        {
+          "AttackDate": "2023-05-19",
+          "Total_Attack_Percentage": 2.76
+        },
+        {
+          "AttackDate": "2023-05-20",
+          "Total_Attack_Percentage": 2.81
+        },
+        {
+          "AttackDate": "2023-05-21",
+          "Total_Attack_Percentage": 2.92
+        },
+        {
+          "AttackDate": "2023-05-22",
+          "Total_Attack_Percentage": 3.18
+        },
+        {
+          "AttackDate": "2023-05-23",
+          "Total_Attack_Percentage": 2.82
+        },
+        {
+          "AttackDate": "2023-05-24",
+          "Total_Attack_Percentage": 0.62
+        },
+        {
+          "AttackDate": "2023-05-25",
+          "Total_Attack_Percentage": 3.49
+        },
+        {
+          "AttackDate": "2023-05-26",
+          "Total_Attack_Percentage": 3.63
+        },
+        {
+          "AttackDate": "2023-05-27",
+          "Total_Attack_Percentage": 3.5000000000000004
+        },
+        {
+          "AttackDate": "2023-05-28",
+          "Total_Attack_Percentage": 4.24
+        },
+        {
+          "AttackDate": "2023-05-29",
+          "Total_Attack_Percentage": 4.61
+        },
+        {
+          "AttackDate": "2023-05-30",
+          "Total_Attack_Percentage": 4.25
+        },
+        {
+          "AttackDate": "2023-05-31",
+          "Total_Attack_Percentage": 3.16
+        },
+        {
+          "AttackDate": "2023-06-01",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-06-02",
+          "Total_Attack_Percentage": 2.84
+        },
+        {
+          "AttackDate": "2023-06-03",
+          "Total_Attack_Percentage": 0.67
+        },
+        {
+          "AttackDate": "2023-06-04",
+          "Total_Attack_Percentage": 3.02
+        },
+        {
+          "AttackDate": "2023-06-05",
+          "Total_Attack_Percentage": 2.84
+        },
+        {
+          "AttackDate": "2023-06-06",
+          "Total_Attack_Percentage": 3.11
+        },
+        {
+          "AttackDate": "2023-06-07",
+          "Total_Attack_Percentage": 3.8900000000000006
+        },
+        {
+          "AttackDate": "2023-06-08",
+          "Total_Attack_Percentage": 2.94
+        },
+        {
+          "AttackDate": "2023-06-09",
+          "Total_Attack_Percentage": 3.04
+        },
+        {
+          "AttackDate": "2023-06-10",
+          "Total_Attack_Percentage": 3.9
+        },
+        {
+          "AttackDate": "2023-06-11",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2023-06-12",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2023-06-15",
+          "Total_Attack_Percentage": 2.94
+        },
+        {
+          "AttackDate": "2023-06-16",
+          "Total_Attack_Percentage": 2.72
+        },
+        {
+          "AttackDate": "2023-06-17",
+          "Total_Attack_Percentage": 2.79
+        },
+        {
+          "AttackDate": "2023-06-18",
+          "Total_Attack_Percentage": 5.31
+        },
+        {
+          "AttackDate": "2023-06-19",
+          "Total_Attack_Percentage": 3.3000000000000003
+        },
+        {
+          "AttackDate": "2023-06-20",
+          "Total_Attack_Percentage": 3.1300000000000003
+        },
+        {
+          "AttackDate": "2023-06-21",
+          "Total_Attack_Percentage": 3.03
+        },
+        {
+          "AttackDate": "2023-06-22",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-06-23",
+          "Total_Attack_Percentage": 2.67
+        },
+        {
+          "AttackDate": "2023-06-24",
+          "Total_Attack_Percentage": 2.34
+        },
+        {
+          "AttackDate": "2023-06-25",
+          "Total_Attack_Percentage": 3.74
+        },
+        {
+          "AttackDate": "2023-06-26",
+          "Total_Attack_Percentage": 4.55
+        },
+        {
+          "AttackDate": "2023-06-27",
+          "Total_Attack_Percentage": 4.94
+        },
+        {
+          "AttackDate": "2023-06-28",
+          "Total_Attack_Percentage": 5.86
+        },
+        {
+          "AttackDate": "2023-06-29",
+          "Total_Attack_Percentage": 3.7800000000000002
+        },
+        {
+          "AttackDate": "2023-07-03",
+          "Total_Attack_Percentage": 2.96
+        },
+        {
+          "AttackDate": "2023-07-04",
+          "Total_Attack_Percentage": 2.77
+        },
+        {
+          "AttackDate": "2023-07-05",
+          "Total_Attack_Percentage": 2.77
+        },
+        {
+          "AttackDate": "2023-07-06",
+          "Total_Attack_Percentage": 2.35
+        },
+        {
+          "AttackDate": "2023-07-07",
+          "Total_Attack_Percentage": 2.33
+        },
+        {
+          "AttackDate": "2023-07-08",
+          "Total_Attack_Percentage": 2.45
+        },
+        {
+          "AttackDate": "2023-07-09",
+          "Total_Attack_Percentage": 2.75
+        },
+        {
+          "AttackDate": "2023-07-10",
+          "Total_Attack_Percentage": 3.05
+        },
+        {
+          "AttackDate": "2023-07-11",
+          "Total_Attack_Percentage": 3.17
+        },
+        {
+          "AttackDate": "2023-07-12",
+          "Total_Attack_Percentage": 2.49
+        },
+        {
+          "AttackDate": "2023-07-13",
+          "Total_Attack_Percentage": 2.59
+        },
+        {
+          "AttackDate": "2023-07-14",
+          "Total_Attack_Percentage": 2.65
+        },
+        {
+          "AttackDate": "2023-07-15",
+          "Total_Attack_Percentage": 2.43
+        },
+        {
+          "AttackDate": "2023-07-16",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-07-17",
+          "Total_Attack_Percentage": 3.7900000000000005
+        },
+        {
+          "AttackDate": "2023-07-18",
+          "Total_Attack_Percentage": 4.38
+        },
+        {
+          "AttackDate": "2023-07-19",
+          "Total_Attack_Percentage": 2.59
+        },
+        {
+          "AttackDate": "2023-07-20",
+          "Total_Attack_Percentage": 2.62
+        },
+        {
+          "AttackDate": "2023-07-21",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-07-22",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-07-23",
+          "Total_Attack_Percentage": 2.86
+        },
+        {
+          "AttackDate": "2023-07-24",
+          "Total_Attack_Percentage": 3.3300000000000005
+        },
+        {
+          "AttackDate": "2023-07-25",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-07-26",
+          "Total_Attack_Percentage": 3.19
+        },
+        {
+          "AttackDate": "2023-07-27",
+          "Total_Attack_Percentage": 2.6
+        },
+        {
+          "AttackDate": "2023-07-28",
+          "Total_Attack_Percentage": 2.53
+        },
+        {
+          "AttackDate": "2023-07-29",
+          "Total_Attack_Percentage": 1.19
+        },
+        {
+          "AttackDate": "2023-07-31",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-08-01",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-08-02",
+          "Total_Attack_Percentage": 2.43
+        },
+        {
+          "AttackDate": "2023-08-03",
+          "Total_Attack_Percentage": 2.33
+        },
+        {
+          "AttackDate": "2023-08-04",
+          "Total_Attack_Percentage": 2.44
+        },
+        {
+          "AttackDate": "2023-08-07",
+          "Total_Attack_Percentage": 3.18
+        },
+        {
+          "AttackDate": "2023-08-08",
+          "Total_Attack_Percentage": 2.93
+        },
+        {
+          "AttackDate": "2023-08-09",
+          "Total_Attack_Percentage": 3.85
+        },
+        {
+          "AttackDate": "2023-08-10",
+          "Total_Attack_Percentage": 2.48
+        },
+        {
+          "AttackDate": "2023-08-11",
+          "Total_Attack_Percentage": 2.41
+        },
+        {
+          "AttackDate": "2023-08-12",
+          "Total_Attack_Percentage": 2.41
+        },
+        {
+          "AttackDate": "2023-08-13",
+          "Total_Attack_Percentage": 2.6
+        },
+        {
+          "AttackDate": "2023-08-14",
+          "Total_Attack_Percentage": 2.37
+        },
+        {
+          "AttackDate": "2023-08-15",
+          "Total_Attack_Percentage": 2.38
+        },
+        {
+          "AttackDate": "2023-08-16",
+          "Total_Attack_Percentage": 2.26
+        },
+        {
+          "AttackDate": "2023-08-17",
+          "Total_Attack_Percentage": 2.39
+        },
+        {
+          "AttackDate": "2023-08-18",
+          "Total_Attack_Percentage": 2.3
+        },
+        {
+          "AttackDate": "2023-08-19",
+          "Total_Attack_Percentage": 2.56
+        },
+        {
+          "AttackDate": "2023-08-20",
+          "Total_Attack_Percentage": 2.84
+        },
+        {
+          "AttackDate": "2023-08-21",
+          "Total_Attack_Percentage": 4.4
+        },
+        {
+          "AttackDate": "2023-08-28",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-08-29",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-08-30",
+          "Total_Attack_Percentage": 2.43
+        },
+        {
+          "AttackDate": "2023-08-31",
+          "Total_Attack_Percentage": 2.29
+        },
+        {
+          "AttackDate": "2023-09-01",
+          "Total_Attack_Percentage": 2.33
+        },
+        {
+          "AttackDate": "2023-09-04",
+          "Total_Attack_Percentage": 2.65
+        },
+        {
+          "AttackDate": "2023-09-05",
+          "Total_Attack_Percentage": 2.04
+        },
+        {
+          "AttackDate": "2023-09-06",
+          "Total_Attack_Percentage": 2.22
+        },
+        {
+          "AttackDate": "2023-09-07",
+          "Total_Attack_Percentage": 2.13
+        },
+        {
+          "AttackDate": "2023-09-08",
+          "Total_Attack_Percentage": 2.11
+        },
+        {
+          "AttackDate": "2023-09-09",
+          "Total_Attack_Percentage": 2.33
+        },
+        {
+          "AttackDate": "2023-09-10",
+          "Total_Attack_Percentage": 2.58
+        },
+        {
+          "AttackDate": "2023-09-11",
+          "Total_Attack_Percentage": 2.91
+        },
+        {
+          "AttackDate": "2023-09-12",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-09-13",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-09-15",
+          "Total_Attack_Percentage": 3.0
+        },
+        {
+          "AttackDate": "2023-09-16",
+          "Total_Attack_Percentage": 3.51
+        },
+        {
+          "AttackDate": "2023-09-18",
+          "Total_Attack_Percentage": 2.38
+        },
+        {
+          "AttackDate": "2023-09-19",
+          "Total_Attack_Percentage": 2.56
+        },
+        {
+          "AttackDate": "2023-09-20",
+          "Total_Attack_Percentage": 2.31
+        },
+        {
+          "AttackDate": "2023-09-21",
+          "Total_Attack_Percentage": 2.31
+        },
+        {
+          "AttackDate": "2023-09-22",
+          "Total_Attack_Percentage": 2.31
+        },
+        {
+          "AttackDate": "2023-09-23",
+          "Total_Attack_Percentage": 3.06
+        },
+        {
+          "AttackDate": "2023-09-24",
+          "Total_Attack_Percentage": 2.31
+        },
+        {
+          "AttackDate": "2023-09-25",
+          "Total_Attack_Percentage": 2.31
+        },
+        {
+          "AttackDate": "2023-09-26",
+          "Total_Attack_Percentage": 2.51
+        },
+        {
+          "AttackDate": "2023-09-27",
+          "Total_Attack_Percentage": 2.07
+        },
+        {
+          "AttackDate": "2023-09-28",
+          "Total_Attack_Percentage": 1.9900000000000002
+        },
+        {
+          "AttackDate": "2023-10-02",
+          "Total_Attack_Percentage": 1.7399999999999998
+        },
+        {
+          "AttackDate": "2023-10-03",
+          "Total_Attack_Percentage": 1.7399999999999998
+        },
+        {
+          "AttackDate": "2023-10-04",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2023-10-05",
+          "Total_Attack_Percentage": 1.32
+        },
+        {
+          "AttackDate": "2023-10-06",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2023-10-07",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2023-10-08",
+          "Total_Attack_Percentage": 1.9
+        },
+        {
+          "AttackDate": "2023-10-09",
+          "Total_Attack_Percentage": 3.18
+        },
+        {
+          "AttackDate": "2023-10-10",
+          "Total_Attack_Percentage": 2.88
+        },
+        {
+          "AttackDate": "2023-10-11",
+          "Total_Attack_Percentage": 2.15
+        },
+        {
+          "AttackDate": "2023-10-12",
+          "Total_Attack_Percentage": 2.04
+        },
+        {
+          "AttackDate": "2023-10-13",
+          "Total_Attack_Percentage": 1.8399999999999999
+        },
+        {
+          "AttackDate": "2023-10-14",
+          "Total_Attack_Percentage": 1.8799999999999997
+        },
+        {
+          "AttackDate": "2023-10-15",
+          "Total_Attack_Percentage": 2.17
+        },
+        {
+          "AttackDate": "2023-10-16",
+          "Total_Attack_Percentage": 2.75
+        },
+        {
+          "AttackDate": "2023-10-17",
+          "Total_Attack_Percentage": 1.9799999999999998
+        },
+        {
+          "AttackDate": "2023-10-18",
+          "Total_Attack_Percentage": 1.9799999999999998
+        },
+        {
+          "AttackDate": "2023-10-19",
+          "Total_Attack_Percentage": 2.12
+        },
+        {
+          "AttackDate": "2023-10-20",
+          "Total_Attack_Percentage": 2.0
+        },
+        {
+          "AttackDate": "2023-10-21",
+          "Total_Attack_Percentage": 1.86
+        },
+        {
+          "AttackDate": "2023-10-22",
+          "Total_Attack_Percentage": 1.86
+        },
+        {
+          "AttackDate": "2023-10-26",
+          "Total_Attack_Percentage": 2.03
+        },
+        {
+          "AttackDate": "2023-10-27",
+          "Total_Attack_Percentage": 2.03
+        },
+        {
+          "AttackDate": "2023-10-28",
+          "Total_Attack_Percentage": 1.9799999999999998
+        },
+        {
+          "AttackDate": "2023-10-29",
+          "Total_Attack_Percentage": 1.87
+        },
+        {
+          "AttackDate": "2023-10-30",
+          "Total_Attack_Percentage": 2.16
+        },
+        {
+          "AttackDate": "2023-10-31",
+          "Total_Attack_Percentage": 2.12
+        },
+        {
+          "AttackDate": "2023-11-01",
+          "Total_Attack_Percentage": 1.8900000000000001
+        },
+        {
+          "AttackDate": "2023-11-02",
+          "Total_Attack_Percentage": 1.77
+        },
+        {
+          "AttackDate": "2023-11-03",
+          "Total_Attack_Percentage": 2.12
+        },
+        {
+          "AttackDate": "2023-11-04",
+          "Total_Attack_Percentage": 1.92
+        },
+        {
+          "AttackDate": "2023-11-05",
+          "Total_Attack_Percentage": 2.69
+        },
+        {
+          "AttackDate": "2023-11-06",
+          "Total_Attack_Percentage": 2.01
+        },
+        {
+          "AttackDate": "2023-11-07",
+          "Total_Attack_Percentage": 1.68
+        },
+        {
+          "AttackDate": "2023-11-09",
+          "Total_Attack_Percentage": 1.8000000000000003
+        },
+        {
+          "AttackDate": "2023-11-10",
+          "Total_Attack_Percentage": 1.8000000000000003
+        },
+        {
+          "AttackDate": "2023-11-11",
+          "Total_Attack_Percentage": 1.9
+        },
+        {
+          "AttackDate": "2023-11-12",
+          "Total_Attack_Percentage": 2.3
+        },
+        {
+          "AttackDate": "2023-11-13",
+          "Total_Attack_Percentage": 2.33
+        },
+        {
+          "AttackDate": "2023-11-14",
+          "Total_Attack_Percentage": 2.36
+        },
+        {
+          "AttackDate": "2023-11-15",
+          "Total_Attack_Percentage": 2.42
+        },
+        {
+          "AttackDate": "2023-11-16",
+          "Total_Attack_Percentage": 3.8
+        },
+        {
+          "AttackDate": "2023-11-17",
+          "Total_Attack_Percentage": 2.19
+        },
+        {
+          "AttackDate": "2023-11-18",
+          "Total_Attack_Percentage": 2.21
+        },
+        {
+          "AttackDate": "2023-11-19",
+          "Total_Attack_Percentage": 2.21
+        },
+        {
+          "AttackDate": "2023-11-20",
+          "Total_Attack_Percentage": 3.09
+        },
+        {
+          "AttackDate": "2023-11-21",
+          "Total_Attack_Percentage": 3.01
+        },
+        {
+          "AttackDate": "2023-11-22",
+          "Total_Attack_Percentage": 2.31
+        },
+        {
+          "AttackDate": "2023-11-23",
+          "Total_Attack_Percentage": 2.1
+        },
+        {
+          "AttackDate": "2023-11-24",
+          "Total_Attack_Percentage": 2.28
+        },
+        {
+          "AttackDate": "2023-11-25",
+          "Total_Attack_Percentage": 2.51
+        },
+        {
+          "AttackDate": "2023-11-26",
+          "Total_Attack_Percentage": 2.48
+        },
+        {
+          "AttackDate": "2023-11-27",
+          "Total_Attack_Percentage": 2.01
+        },
+        {
+          "AttackDate": "2023-11-28",
+          "Total_Attack_Percentage": 1.95
+        },
+        {
+          "AttackDate": "2023-11-29",
+          "Total_Attack_Percentage": 1.8900000000000001
+        },
+        {
+          "AttackDate": "2023-11-30",
+          "Total_Attack_Percentage": 2.05
+        },
+        {
+          "AttackDate": "2023-12-01",
+          "Total_Attack_Percentage": 2.28
+        },
+        {
+          "AttackDate": "2023-12-02",
+          "Total_Attack_Percentage": 2.14
+        },
+        {
+          "AttackDate": "2023-12-03",
+          "Total_Attack_Percentage": 2.34
+        },
+        {
+          "AttackDate": "2023-12-04",
+          "Total_Attack_Percentage": 2.65
+        },
+        {
+          "AttackDate": "2023-12-05",
+          "Total_Attack_Percentage": 2.68
+        },
+        {
+          "AttackDate": "2023-12-06",
+          "Total_Attack_Percentage": 2.08
+        },
+        {
+          "AttackDate": "2023-12-07",
+          "Total_Attack_Percentage": 2.47
+        },
+        {
+          "AttackDate": "2023-12-08",
+          "Total_Attack_Percentage": 2.21
+        },
+        {
+          "AttackDate": "2023-12-09",
+          "Total_Attack_Percentage": 2.12
+        },
+        {
+          "AttackDate": "2023-12-10",
+          "Total_Attack_Percentage": 2.14
+        },
+        {
+          "AttackDate": "2023-12-11",
+          "Total_Attack_Percentage": 2.67
+        }
+      ]
+    },
+    {
+      "name": "Russian Federation",
+      "data": [
+        {
+          "AttackDate": "2022-10-11",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2022-10-12",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2022-10-13",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2022-10-14",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2022-10-15",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2022-10-16",
+          "Total_Attack_Percentage": 1.37
+        },
+        {
+          "AttackDate": "2022-10-17",
+          "Total_Attack_Percentage": 0.93
+        },
+        {
+          "AttackDate": "2022-10-18",
+          "Total_Attack_Percentage": 1.0
+        },
+        {
+          "AttackDate": "2022-10-19",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2022-10-20",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2022-10-21",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2022-10-22",
+          "Total_Attack_Percentage": 1.33
+        },
+        {
+          "AttackDate": "2022-10-23",
+          "Total_Attack_Percentage": 1.13
+        },
+        {
+          "AttackDate": "2022-10-24",
+          "Total_Attack_Percentage": 0.89
+        },
+        {
+          "AttackDate": "2022-10-25",
+          "Total_Attack_Percentage": 0.9899999999999999
+        },
+        {
+          "AttackDate": "2022-10-26",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2022-10-27",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2022-10-28",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2022-10-29",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2022-10-30",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2022-10-31",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2022-11-01",
+          "Total_Attack_Percentage": 1.11
+        },
+        {
+          "AttackDate": "2022-11-02",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2022-11-03",
+          "Total_Attack_Percentage": 1.37
+        },
+        {
+          "AttackDate": "2022-11-04",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2022-11-05",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2022-11-06",
+          "Total_Attack_Percentage": 0.98
+        },
+        {
+          "AttackDate": "2022-11-07",
+          "Total_Attack_Percentage": 0.76
+        },
+        {
+          "AttackDate": "2022-11-08",
+          "Total_Attack_Percentage": 0.9899999999999999
+        },
+        {
+          "AttackDate": "2022-11-09",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2022-11-10",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2022-11-11",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2022-11-13",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2022-11-14",
+          "Total_Attack_Percentage": 1.0
+        },
+        {
+          "AttackDate": "2022-11-15",
+          "Total_Attack_Percentage": 0.98
+        },
+        {
+          "AttackDate": "2022-11-16",
+          "Total_Attack_Percentage": 1.77
+        },
+        {
+          "AttackDate": "2022-11-17",
+          "Total_Attack_Percentage": 1.63
+        },
+        {
+          "AttackDate": "2022-11-18",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2022-11-19",
+          "Total_Attack_Percentage": 1.8900000000000001
+        },
+        {
+          "AttackDate": "2022-11-21",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2022-11-22",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-11-23",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-11-24",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-11-25",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-11-27",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2022-11-28",
+          "Total_Attack_Percentage": 0.9199999999999999
+        },
+        {
+          "AttackDate": "2022-11-29",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-11-30",
+          "Total_Attack_Percentage": 1.6
+        },
+        {
+          "AttackDate": "2022-12-01",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2022-12-02",
+          "Total_Attack_Percentage": 2.06
+        },
+        {
+          "AttackDate": "2022-12-03",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2022-12-04",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2022-12-05",
+          "Total_Attack_Percentage": 0.9199999999999999
+        },
+        {
+          "AttackDate": "2022-12-06",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-12-07",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2022-12-08",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2022-12-09",
+          "Total_Attack_Percentage": 1.63
+        },
+        {
+          "AttackDate": "2022-12-10",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2022-12-11",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2022-12-12",
+          "Total_Attack_Percentage": 0.89
+        },
+        {
+          "AttackDate": "2022-12-13",
+          "Total_Attack_Percentage": 1.06
+        },
+        {
+          "AttackDate": "2022-12-14",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2022-12-15",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2022-12-16",
+          "Total_Attack_Percentage": 1.39
+        },
+        {
+          "AttackDate": "2022-12-17",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2022-12-18",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2022-12-19",
+          "Total_Attack_Percentage": 0.91
+        },
+        {
+          "AttackDate": "2022-12-20",
+          "Total_Attack_Percentage": 0.98
+        },
+        {
+          "AttackDate": "2022-12-21",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2022-12-22",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2022-12-23",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2022-12-24",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2022-12-25",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2022-12-27",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2022-12-28",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2022-12-29",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2022-12-30",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2022-12-31",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-01-01",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-01-02",
+          "Total_Attack_Percentage": 0.84
+        },
+        {
+          "AttackDate": "2023-01-03",
+          "Total_Attack_Percentage": 0.7
+        },
+        {
+          "AttackDate": "2023-01-04",
+          "Total_Attack_Percentage": 0.72
+        },
+        {
+          "AttackDate": "2023-01-05",
+          "Total_Attack_Percentage": 0.86
+        },
+        {
+          "AttackDate": "2023-01-06",
+          "Total_Attack_Percentage": 0.86
+        },
+        {
+          "AttackDate": "2023-01-07",
+          "Total_Attack_Percentage": 1.01
+        },
+        {
+          "AttackDate": "2023-01-08",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2023-01-09",
+          "Total_Attack_Percentage": 0.86
+        },
+        {
+          "AttackDate": "2023-01-10",
+          "Total_Attack_Percentage": 0.9000000000000001
+        },
+        {
+          "AttackDate": "2023-01-11",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2023-01-12",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-01-13",
+          "Total_Attack_Percentage": 1.73
+        },
+        {
+          "AttackDate": "2023-01-14",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-01-15",
+          "Total_Attack_Percentage": 1.32
+        },
+        {
+          "AttackDate": "2023-01-16",
+          "Total_Attack_Percentage": 1.01
+        },
+        {
+          "AttackDate": "2023-01-17",
+          "Total_Attack_Percentage": 1.31
+        },
+        {
+          "AttackDate": "2023-01-18",
+          "Total_Attack_Percentage": 1.41
+        },
+        {
+          "AttackDate": "2023-01-20",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-01-21",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-01-22",
+          "Total_Attack_Percentage": 1.36
+        },
+        {
+          "AttackDate": "2023-01-23",
+          "Total_Attack_Percentage": 0.8699999999999999
+        },
+        {
+          "AttackDate": "2023-01-24",
+          "Total_Attack_Percentage": 1.07
+        },
+        {
+          "AttackDate": "2023-01-25",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-01-26",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2023-01-27",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-01-28",
+          "Total_Attack_Percentage": 1.91
+        },
+        {
+          "AttackDate": "2023-01-29",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-01-30",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-01-31",
+          "Total_Attack_Percentage": 1.09
+        },
+        {
+          "AttackDate": "2023-02-01",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-02-02",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-02-03",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-02-04",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2023-02-05",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2023-02-06",
+          "Total_Attack_Percentage": 1.35
+        },
+        {
+          "AttackDate": "2023-02-07",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-02-08",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-02-09",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-02-10",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-02-11",
+          "Total_Attack_Percentage": 1.7399999999999998
+        },
+        {
+          "AttackDate": "2023-02-12",
+          "Total_Attack_Percentage": 1.7399999999999998
+        },
+        {
+          "AttackDate": "2023-02-13",
+          "Total_Attack_Percentage": 1.23
+        },
+        {
+          "AttackDate": "2023-02-14",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-02-15",
+          "Total_Attack_Percentage": 1.68
+        },
+        {
+          "AttackDate": "2023-02-16",
+          "Total_Attack_Percentage": 1.79
+        },
+        {
+          "AttackDate": "2023-02-17",
+          "Total_Attack_Percentage": 1.8000000000000003
+        },
+        {
+          "AttackDate": "2023-02-18",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-02-19",
+          "Total_Attack_Percentage": 1.82
+        },
+        {
+          "AttackDate": "2023-02-20",
+          "Total_Attack_Percentage": 1.31
+        },
+        {
+          "AttackDate": "2023-02-21",
+          "Total_Attack_Percentage": 1.23
+        },
+        {
+          "AttackDate": "2023-02-22",
+          "Total_Attack_Percentage": 1.73
+        },
+        {
+          "AttackDate": "2023-02-23",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-02-24",
+          "Total_Attack_Percentage": 1.5
+        },
+        {
+          "AttackDate": "2023-02-25",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2023-02-26",
+          "Total_Attack_Percentage": 1.15
+        },
+        {
+          "AttackDate": "2023-02-27",
+          "Total_Attack_Percentage": 0.97
+        },
+        {
+          "AttackDate": "2023-02-28",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-03-01",
+          "Total_Attack_Percentage": 1.67
+        },
+        {
+          "AttackDate": "2023-03-02",
+          "Total_Attack_Percentage": 1.68
+        },
+        {
+          "AttackDate": "2023-03-03",
+          "Total_Attack_Percentage": 1.79
+        },
+        {
+          "AttackDate": "2023-03-04",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-03-05",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-03-06",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2023-03-07",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-03-08",
+          "Total_Attack_Percentage": 1.73
+        },
+        {
+          "AttackDate": "2023-03-09",
+          "Total_Attack_Percentage": 1.6
+        },
+        {
+          "AttackDate": "2023-03-10",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2023-03-11",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2023-03-13",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2023-03-14",
+          "Total_Attack_Percentage": 1.16
+        },
+        {
+          "AttackDate": "2023-03-15",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2023-03-16",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-03-17",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-03-18",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-03-19",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2023-03-20",
+          "Total_Attack_Percentage": 0.97
+        },
+        {
+          "AttackDate": "2023-03-21",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2023-03-22",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-03-23",
+          "Total_Attack_Percentage": 1.71
+        },
+        {
+          "AttackDate": "2023-03-24",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-03-27",
+          "Total_Attack_Percentage": 1.0
+        },
+        {
+          "AttackDate": "2023-03-28",
+          "Total_Attack_Percentage": 1.18
+        },
+        {
+          "AttackDate": "2023-03-29",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-03-30",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-03-31",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2023-04-01",
+          "Total_Attack_Percentage": 1.5
+        },
+        {
+          "AttackDate": "2023-04-02",
+          "Total_Attack_Percentage": 1.32
+        },
+        {
+          "AttackDate": "2023-04-03",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2023-04-04",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2023-04-05",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-04-06",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2023-04-07",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-04-08",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2023-04-09",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-04-10",
+          "Total_Attack_Percentage": 1.13
+        },
+        {
+          "AttackDate": "2023-04-11",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-04-12",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2023-04-13",
+          "Total_Attack_Percentage": 1.59
+        },
+        {
+          "AttackDate": "2023-04-14",
+          "Total_Attack_Percentage": 1.77
+        },
+        {
+          "AttackDate": "2023-04-15",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-04-16",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-04-17",
+          "Total_Attack_Percentage": 1.2
+        },
+        {
+          "AttackDate": "2023-04-18",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-04-19",
+          "Total_Attack_Percentage": 1.96
+        },
+        {
+          "AttackDate": "2023-04-20",
+          "Total_Attack_Percentage": 1.7399999999999998
+        },
+        {
+          "AttackDate": "2023-04-21",
+          "Total_Attack_Percentage": 1.72
+        },
+        {
+          "AttackDate": "2023-04-22",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-04-23",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-04-24",
+          "Total_Attack_Percentage": 1.16
+        },
+        {
+          "AttackDate": "2023-04-25",
+          "Total_Attack_Percentage": 1.23
+        },
+        {
+          "AttackDate": "2023-04-26",
+          "Total_Attack_Percentage": 1.67
+        },
+        {
+          "AttackDate": "2023-04-27",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2023-04-28",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-04-29",
+          "Total_Attack_Percentage": 1.6
+        },
+        {
+          "AttackDate": "2023-04-30",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-05-01",
+          "Total_Attack_Percentage": 1.2
+        },
+        {
+          "AttackDate": "2023-05-02",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-05-03",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-05-04",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-05-06",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-05-07",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-05-08",
+          "Total_Attack_Percentage": 1.07
+        },
+        {
+          "AttackDate": "2023-05-09",
+          "Total_Attack_Percentage": 1.09
+        },
+        {
+          "AttackDate": "2023-05-10",
+          "Total_Attack_Percentage": 1.15
+        },
+        {
+          "AttackDate": "2023-05-12",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-05-13",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2023-05-14",
+          "Total_Attack_Percentage": 1.37
+        },
+        {
+          "AttackDate": "2023-05-15",
+          "Total_Attack_Percentage": 0.9000000000000001
+        },
+        {
+          "AttackDate": "2023-05-16",
+          "Total_Attack_Percentage": 1.1
+        },
+        {
+          "AttackDate": "2023-05-17",
+          "Total_Attack_Percentage": 0.78
+        },
+        {
+          "AttackDate": "2023-05-18",
+          "Total_Attack_Percentage": 1.5
+        },
+        {
+          "AttackDate": "2023-05-19",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-05-20",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-05-21",
+          "Total_Attack_Percentage": 0.75
+        },
+        {
+          "AttackDate": "2023-05-22",
+          "Total_Attack_Percentage": 0.72
+        },
+        {
+          "AttackDate": "2023-05-23",
+          "Total_Attack_Percentage": 0.9899999999999999
+        },
+        {
+          "AttackDate": "2023-05-24",
+          "Total_Attack_Percentage": 0.52
+        },
+        {
+          "AttackDate": "2023-05-25",
+          "Total_Attack_Percentage": 1.92
+        },
+        {
+          "AttackDate": "2023-05-26",
+          "Total_Attack_Percentage": 1.81
+        },
+        {
+          "AttackDate": "2023-05-27",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-05-28",
+          "Total_Attack_Percentage": 1.78
+        },
+        {
+          "AttackDate": "2023-05-29",
+          "Total_Attack_Percentage": 1.7500000000000002
+        },
+        {
+          "AttackDate": "2023-05-30",
+          "Total_Attack_Percentage": 0.9000000000000001
+        },
+        {
+          "AttackDate": "2023-05-31",
+          "Total_Attack_Percentage": 1.77
+        },
+        {
+          "AttackDate": "2023-06-01",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-06-02",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-06-03",
+          "Total_Attack_Percentage": 0.58
+        },
+        {
+          "AttackDate": "2023-06-04",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-06-05",
+          "Total_Attack_Percentage": 0.97
+        },
+        {
+          "AttackDate": "2023-06-06",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-06-07",
+          "Total_Attack_Percentage": 1.8799999999999997
+        },
+        {
+          "AttackDate": "2023-06-08",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-06-09",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2023-06-10",
+          "Total_Attack_Percentage": 1.9900000000000002
+        },
+        {
+          "AttackDate": "2023-06-11",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-06-12",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-06-15",
+          "Total_Attack_Percentage": 1.81
+        },
+        {
+          "AttackDate": "2023-06-16",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-06-17",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-06-18",
+          "Total_Attack_Percentage": 2.42
+        },
+        {
+          "AttackDate": "2023-06-19",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-06-20",
+          "Total_Attack_Percentage": 1.04
+        },
+        {
+          "AttackDate": "2023-06-21",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2023-06-22",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2023-06-23",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2023-06-24",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-06-25",
+          "Total_Attack_Percentage": 1.67
+        },
+        {
+          "AttackDate": "2023-06-26",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-06-27",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-06-28",
+          "Total_Attack_Percentage": 2.14
+        },
+        {
+          "AttackDate": "2023-06-29",
+          "Total_Attack_Percentage": 1.96
+        },
+        {
+          "AttackDate": "2023-07-03",
+          "Total_Attack_Percentage": 1.0
+        },
+        {
+          "AttackDate": "2023-07-04",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-07-05",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-07-06",
+          "Total_Attack_Percentage": 1.41
+        },
+        {
+          "AttackDate": "2023-07-07",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2023-07-08",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2023-07-09",
+          "Total_Attack_Percentage": 1.09
+        },
+        {
+          "AttackDate": "2023-07-10",
+          "Total_Attack_Percentage": 0.8699999999999999
+        },
+        {
+          "AttackDate": "2023-07-11",
+          "Total_Attack_Percentage": 0.95
+        },
+        {
+          "AttackDate": "2023-07-12",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-07-13",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-07-14",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2023-07-15",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-07-16",
+          "Total_Attack_Percentage": 1.41
+        },
+        {
+          "AttackDate": "2023-07-17",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2023-07-18",
+          "Total_Attack_Percentage": 1.58
+        },
+        {
+          "AttackDate": "2023-07-19",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-07-20",
+          "Total_Attack_Percentage": 1.8500000000000003
+        },
+        {
+          "AttackDate": "2023-07-21",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-07-22",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-07-23",
+          "Total_Attack_Percentage": 1.5
+        },
+        {
+          "AttackDate": "2023-07-24",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2023-07-25",
+          "Total_Attack_Percentage": 1.16
+        },
+        {
+          "AttackDate": "2023-07-26",
+          "Total_Attack_Percentage": 1.16
+        },
+        {
+          "AttackDate": "2023-07-27",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-07-28",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2023-07-29",
+          "Total_Attack_Percentage": 0.16
+        },
+        {
+          "AttackDate": "2023-07-31",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2023-08-01",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2023-08-02",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-08-03",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-08-04",
+          "Total_Attack_Percentage": 1.72
+        },
+        {
+          "AttackDate": "2023-08-07",
+          "Total_Attack_Percentage": 0.91
+        },
+        {
+          "AttackDate": "2023-08-08",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-08-09",
+          "Total_Attack_Percentage": 2.39
+        },
+        {
+          "AttackDate": "2023-08-10",
+          "Total_Attack_Percentage": 1.63
+        },
+        {
+          "AttackDate": "2023-08-11",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-08-12",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-08-13",
+          "Total_Attack_Percentage": 1.41
+        },
+        {
+          "AttackDate": "2023-08-14",
+          "Total_Attack_Percentage": 1.36
+        },
+        {
+          "AttackDate": "2023-08-15",
+          "Total_Attack_Percentage": 1.31
+        },
+        {
+          "AttackDate": "2023-08-16",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-08-17",
+          "Total_Attack_Percentage": 1.8000000000000003
+        },
+        {
+          "AttackDate": "2023-08-18",
+          "Total_Attack_Percentage": 1.63
+        },
+        {
+          "AttackDate": "2023-08-19",
+          "Total_Attack_Percentage": 1.82
+        },
+        {
+          "AttackDate": "2023-08-20",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-08-21",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-08-28",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-08-29",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-08-30",
+          "Total_Attack_Percentage": 1.79
+        },
+        {
+          "AttackDate": "2023-08-31",
+          "Total_Attack_Percentage": 1.83
+        },
+        {
+          "AttackDate": "2023-09-01",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-09-04",
+          "Total_Attack_Percentage": 1.26
+        },
+        {
+          "AttackDate": "2023-09-05",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-09-06",
+          "Total_Attack_Percentage": 1.6
+        },
+        {
+          "AttackDate": "2023-09-07",
+          "Total_Attack_Percentage": 1.68
+        },
+        {
+          "AttackDate": "2023-09-08",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-09-09",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-09-10",
+          "Total_Attack_Percentage": 1.35
+        },
+        {
+          "AttackDate": "2023-09-11",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2023-09-12",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2023-09-13",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2023-09-15",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2023-09-16",
+          "Total_Attack_Percentage": 2.17
+        },
+        {
+          "AttackDate": "2023-09-18",
+          "Total_Attack_Percentage": 1.36
+        },
+        {
+          "AttackDate": "2023-09-19",
+          "Total_Attack_Percentage": 1.35
+        },
+        {
+          "AttackDate": "2023-09-20",
+          "Total_Attack_Percentage": 1.97
+        },
+        {
+          "AttackDate": "2023-09-21",
+          "Total_Attack_Percentage": 1.97
+        },
+        {
+          "AttackDate": "2023-09-22",
+          "Total_Attack_Percentage": 1.97
+        },
+        {
+          "AttackDate": "2023-09-23",
+          "Total_Attack_Percentage": 2.62
+        },
+        {
+          "AttackDate": "2023-09-24",
+          "Total_Attack_Percentage": 1.97
+        },
+        {
+          "AttackDate": "2023-09-25",
+          "Total_Attack_Percentage": 1.97
+        },
+        {
+          "AttackDate": "2023-09-26",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2023-09-27",
+          "Total_Attack_Percentage": 1.73
+        },
+        {
+          "AttackDate": "2023-09-28",
+          "Total_Attack_Percentage": 1.37
+        },
+        {
+          "AttackDate": "2023-10-02",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-10-03",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-10-04",
+          "Total_Attack_Percentage": 1.91
+        },
+        {
+          "AttackDate": "2023-10-05",
+          "Total_Attack_Percentage": 1.82
+        },
+        {
+          "AttackDate": "2023-10-06",
+          "Total_Attack_Percentage": 1.7500000000000002
+        },
+        {
+          "AttackDate": "2023-10-07",
+          "Total_Attack_Percentage": 1.7500000000000002
+        },
+        {
+          "AttackDate": "2023-10-08",
+          "Total_Attack_Percentage": 1.6500000000000001
+        },
+        {
+          "AttackDate": "2023-10-09",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-10-10",
+          "Total_Attack_Percentage": 1.73
+        },
+        {
+          "AttackDate": "2023-10-11",
+          "Total_Attack_Percentage": 2.21
+        },
+        {
+          "AttackDate": "2023-10-12",
+          "Total_Attack_Percentage": 2.14
+        },
+        {
+          "AttackDate": "2023-10-13",
+          "Total_Attack_Percentage": 1.58
+        },
+        {
+          "AttackDate": "2023-10-14",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2023-10-15",
+          "Total_Attack_Percentage": 1.58
+        },
+        {
+          "AttackDate": "2023-10-16",
+          "Total_Attack_Percentage": 2.0
+        },
+        {
+          "AttackDate": "2023-10-17",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-10-18",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-10-19",
+          "Total_Attack_Percentage": 2.21
+        },
+        {
+          "AttackDate": "2023-10-20",
+          "Total_Attack_Percentage": 1.8399999999999999
+        },
+        {
+          "AttackDate": "2023-10-21",
+          "Total_Attack_Percentage": 1.72
+        },
+        {
+          "AttackDate": "2023-10-22",
+          "Total_Attack_Percentage": 1.72
+        },
+        {
+          "AttackDate": "2023-10-26",
+          "Total_Attack_Percentage": 1.95
+        },
+        {
+          "AttackDate": "2023-10-27",
+          "Total_Attack_Percentage": 1.95
+        },
+        {
+          "AttackDate": "2023-10-28",
+          "Total_Attack_Percentage": 1.8799999999999997
+        },
+        {
+          "AttackDate": "2023-10-29",
+          "Total_Attack_Percentage": 1.8500000000000003
+        },
+        {
+          "AttackDate": "2023-10-30",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2023-10-31",
+          "Total_Attack_Percentage": 1.9
+        },
+        {
+          "AttackDate": "2023-11-01",
+          "Total_Attack_Percentage": 2.04
+        },
+        {
+          "AttackDate": "2023-11-02",
+          "Total_Attack_Percentage": 2.13
+        },
+        {
+          "AttackDate": "2023-11-03",
+          "Total_Attack_Percentage": 2.01
+        },
+        {
+          "AttackDate": "2023-11-04",
+          "Total_Attack_Percentage": 1.86
+        },
+        {
+          "AttackDate": "2023-11-05",
+          "Total_Attack_Percentage": 2.89
+        },
+        {
+          "AttackDate": "2023-11-06",
+          "Total_Attack_Percentage": 1.78
+        },
+        {
+          "AttackDate": "2023-11-07",
+          "Total_Attack_Percentage": 1.78
+        },
+        {
+          "AttackDate": "2023-11-09",
+          "Total_Attack_Percentage": 1.78
+        },
+        {
+          "AttackDate": "2023-11-10",
+          "Total_Attack_Percentage": 1.78
+        },
+        {
+          "AttackDate": "2023-11-11",
+          "Total_Attack_Percentage": 1.8500000000000003
+        },
+        {
+          "AttackDate": "2023-11-12",
+          "Total_Attack_Percentage": 1.83
+        },
+        {
+          "AttackDate": "2023-11-13",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-11-14",
+          "Total_Attack_Percentage": 1.76
+        },
+        {
+          "AttackDate": "2023-11-15",
+          "Total_Attack_Percentage": 2.11
+        },
+        {
+          "AttackDate": "2023-11-16",
+          "Total_Attack_Percentage": 2.99
+        },
+        {
+          "AttackDate": "2023-11-17",
+          "Total_Attack_Percentage": 1.8900000000000001
+        },
+        {
+          "AttackDate": "2023-11-18",
+          "Total_Attack_Percentage": 1.8000000000000003
+        },
+        {
+          "AttackDate": "2023-11-19",
+          "Total_Attack_Percentage": 1.81
+        },
+        {
+          "AttackDate": "2023-11-20",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-11-21",
+          "Total_Attack_Percentage": 1.91
+        },
+        {
+          "AttackDate": "2023-11-22",
+          "Total_Attack_Percentage": 2.13
+        },
+        {
+          "AttackDate": "2023-11-23",
+          "Total_Attack_Percentage": 2.38
+        },
+        {
+          "AttackDate": "2023-11-24",
+          "Total_Attack_Percentage": 2.18
+        },
+        {
+          "AttackDate": "2023-11-25",
+          "Total_Attack_Percentage": 1.96
+        },
+        {
+          "AttackDate": "2023-11-26",
+          "Total_Attack_Percentage": 2.0
+        },
+        {
+          "AttackDate": "2023-11-27",
+          "Total_Attack_Percentage": 1.71
+        },
+        {
+          "AttackDate": "2023-11-28",
+          "Total_Attack_Percentage": 1.81
+        },
+        {
+          "AttackDate": "2023-11-29",
+          "Total_Attack_Percentage": 2.07
+        },
+        {
+          "AttackDate": "2023-11-30",
+          "Total_Attack_Percentage": 1.8900000000000001
+        },
+        {
+          "AttackDate": "2023-12-01",
+          "Total_Attack_Percentage": 2.08
+        },
+        {
+          "AttackDate": "2023-12-02",
+          "Total_Attack_Percentage": 1.87
+        },
+        {
+          "AttackDate": "2023-12-03",
+          "Total_Attack_Percentage": 1.83
+        },
+        {
+          "AttackDate": "2023-12-04",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-12-05",
+          "Total_Attack_Percentage": 1.7500000000000002
+        },
+        {
+          "AttackDate": "2023-12-06",
+          "Total_Attack_Percentage": 1.8500000000000003
+        },
+        {
+          "AttackDate": "2023-12-07",
+          "Total_Attack_Percentage": 1.91
+        },
+        {
+          "AttackDate": "2023-12-08",
+          "Total_Attack_Percentage": 1.82
+        },
+        {
+          "AttackDate": "2023-12-09",
+          "Total_Attack_Percentage": 1.73
+        },
+        {
+          "AttackDate": "2023-12-10",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-12-11",
+          "Total_Attack_Percentage": 1.53
+        }
+      ]
+    },
+    {
+      "name": "Republic of Guinea-Bissau",
+      "data": [
+        {
+          "AttackDate": "2022-10-11",
+          "Total_Attack_Percentage": 1.18
+        },
+        {
+          "AttackDate": "2022-10-12",
+          "Total_Attack_Percentage": 1.18
+        },
+        {
+          "AttackDate": "2022-10-13",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2022-10-14",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2022-10-15",
+          "Total_Attack_Percentage": 1.13
+        },
+        {
+          "AttackDate": "2022-10-16",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2022-10-17",
+          "Total_Attack_Percentage": 0.56
+        },
+        {
+          "AttackDate": "2022-10-18",
+          "Total_Attack_Percentage": 0.37
+        },
+        {
+          "AttackDate": "2022-10-19",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-10-20",
+          "Total_Attack_Percentage": 1.05
+        },
+        {
+          "AttackDate": "2022-10-21",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2022-10-22",
+          "Total_Attack_Percentage": 1.12
+        },
+        {
+          "AttackDate": "2022-10-23",
+          "Total_Attack_Percentage": 1.33
+        },
+        {
+          "AttackDate": "2022-10-24",
+          "Total_Attack_Percentage": 0.55
+        },
+        {
+          "AttackDate": "2022-10-25",
+          "Total_Attack_Percentage": 0.61
+        },
+        {
+          "AttackDate": "2022-10-26",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2022-10-27",
+          "Total_Attack_Percentage": 1.04
+        },
+        {
+          "AttackDate": "2022-10-28",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2022-10-29",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2022-10-30",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2022-10-31",
+          "Total_Attack_Percentage": 0.56
+        },
+        {
+          "AttackDate": "2022-11-01",
+          "Total_Attack_Percentage": 0.51
+        },
+        {
+          "AttackDate": "2022-11-02",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2022-11-03",
+          "Total_Attack_Percentage": 1.35
+        },
+        {
+          "AttackDate": "2022-11-04",
+          "Total_Attack_Percentage": 0.62
+        },
+        {
+          "AttackDate": "2022-11-05",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2022-11-06",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2022-11-07",
+          "Total_Attack_Percentage": 0.65
+        },
+        {
+          "AttackDate": "2022-11-08",
+          "Total_Attack_Percentage": 0.32
+        },
+        {
+          "AttackDate": "2022-11-09",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2022-11-10",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2022-11-11",
+          "Total_Attack_Percentage": 1.5
+        },
+        {
+          "AttackDate": "2022-11-13",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2022-11-14",
+          "Total_Attack_Percentage": 0.65
+        },
+        {
+          "AttackDate": "2022-11-15",
+          "Total_Attack_Percentage": 0.54
+        },
+        {
+          "AttackDate": "2022-11-16",
+          "Total_Attack_Percentage": 1.91
+        },
+        {
+          "AttackDate": "2022-11-17",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2022-11-18",
+          "Total_Attack_Percentage": 1.81
+        },
+        {
+          "AttackDate": "2022-11-19",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2022-11-21",
+          "Total_Attack_Percentage": 0.7
+        },
+        {
+          "AttackDate": "2022-11-22",
+          "Total_Attack_Percentage": 0.42
+        },
+        {
+          "AttackDate": "2022-11-23",
+          "Total_Attack_Percentage": 0.42
+        },
+        {
+          "AttackDate": "2022-11-24",
+          "Total_Attack_Percentage": 0.42
+        },
+        {
+          "AttackDate": "2022-11-25",
+          "Total_Attack_Percentage": 0.42
+        },
+        {
+          "AttackDate": "2022-11-27",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2022-11-28",
+          "Total_Attack_Percentage": 0.55
+        },
+        {
+          "AttackDate": "2022-11-29",
+          "Total_Attack_Percentage": 0.45999999999999996
+        },
+        {
+          "AttackDate": "2022-11-30",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2022-12-01",
+          "Total_Attack_Percentage": 1.06
+        },
+        {
+          "AttackDate": "2022-12-02",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2022-12-03",
+          "Total_Attack_Percentage": 1.18
+        },
+        {
+          "AttackDate": "2022-12-04",
+          "Total_Attack_Percentage": 1.71
+        },
+        {
+          "AttackDate": "2022-12-05",
+          "Total_Attack_Percentage": 0.55
+        },
+        {
+          "AttackDate": "2022-12-06",
+          "Total_Attack_Percentage": 0.4699999999999999
+        },
+        {
+          "AttackDate": "2022-12-07",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2022-12-08",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2022-12-09",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2022-12-10",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2022-12-11",
+          "Total_Attack_Percentage": 1.12
+        },
+        {
+          "AttackDate": "2022-12-12",
+          "Total_Attack_Percentage": 0.68
+        },
+        {
+          "AttackDate": "2022-12-13",
+          "Total_Attack_Percentage": 0.58
+        },
+        {
+          "AttackDate": "2022-12-14",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2022-12-15",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2022-12-16",
+          "Total_Attack_Percentage": 1.31
+        },
+        {
+          "AttackDate": "2022-12-17",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2022-12-18",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2022-12-19",
+          "Total_Attack_Percentage": 0.88
+        },
+        {
+          "AttackDate": "2022-12-20",
+          "Total_Attack_Percentage": 0.83
+        },
+        {
+          "AttackDate": "2022-12-21",
+          "Total_Attack_Percentage": 1.18
+        },
+        {
+          "AttackDate": "2022-12-22",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2022-12-23",
+          "Total_Attack_Percentage": 1.42
+        },
+        {
+          "AttackDate": "2022-12-24",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2022-12-25",
+          "Total_Attack_Percentage": 0.8100000000000002
+        },
+        {
+          "AttackDate": "2022-12-27",
+          "Total_Attack_Percentage": 0.37
+        },
+        {
+          "AttackDate": "2022-12-28",
+          "Total_Attack_Percentage": 0.37
+        },
+        {
+          "AttackDate": "2022-12-29",
+          "Total_Attack_Percentage": 1.1
+        },
+        {
+          "AttackDate": "2022-12-30",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2022-12-31",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-01-01",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-01-02",
+          "Total_Attack_Percentage": 0.52
+        },
+        {
+          "AttackDate": "2023-01-03",
+          "Total_Attack_Percentage": 0.57
+        },
+        {
+          "AttackDate": "2023-01-04",
+          "Total_Attack_Percentage": 0.9199999999999999
+        },
+        {
+          "AttackDate": "2023-01-05",
+          "Total_Attack_Percentage": 1.33
+        },
+        {
+          "AttackDate": "2023-01-06",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-01-07",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-01-08",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-01-09",
+          "Total_Attack_Percentage": 0.64
+        },
+        {
+          "AttackDate": "2023-01-10",
+          "Total_Attack_Percentage": 0.45999999999999996
+        },
+        {
+          "AttackDate": "2023-01-11",
+          "Total_Attack_Percentage": 1.6
+        },
+        {
+          "AttackDate": "2023-01-12",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-01-13",
+          "Total_Attack_Percentage": 1.8500000000000003
+        },
+        {
+          "AttackDate": "2023-01-14",
+          "Total_Attack_Percentage": 1.59
+        },
+        {
+          "AttackDate": "2023-01-15",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2023-01-16",
+          "Total_Attack_Percentage": 0.68
+        },
+        {
+          "AttackDate": "2023-01-17",
+          "Total_Attack_Percentage": 0.5
+        },
+        {
+          "AttackDate": "2023-01-18",
+          "Total_Attack_Percentage": 1.39
+        },
+        {
+          "AttackDate": "2023-01-20",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2023-01-21",
+          "Total_Attack_Percentage": 1.15
+        },
+        {
+          "AttackDate": "2023-01-22",
+          "Total_Attack_Percentage": 0.4099999999999999
+        },
+        {
+          "AttackDate": "2023-01-23",
+          "Total_Attack_Percentage": 0.64
+        },
+        {
+          "AttackDate": "2023-01-24",
+          "Total_Attack_Percentage": 0.33
+        },
+        {
+          "AttackDate": "2023-01-25",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-01-26",
+          "Total_Attack_Percentage": 1.07
+        },
+        {
+          "AttackDate": "2023-01-27",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-01-28",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-01-29",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-01-30",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-01-31",
+          "Total_Attack_Percentage": 0.5
+        },
+        {
+          "AttackDate": "2023-02-01",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2023-02-02",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-02-03",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-02-04",
+          "Total_Attack_Percentage": 1.16
+        },
+        {
+          "AttackDate": "2023-02-05",
+          "Total_Attack_Percentage": 0.93
+        },
+        {
+          "AttackDate": "2023-02-06",
+          "Total_Attack_Percentage": 0.61
+        },
+        {
+          "AttackDate": "2023-02-07",
+          "Total_Attack_Percentage": 0.4699999999999999
+        },
+        {
+          "AttackDate": "2023-02-08",
+          "Total_Attack_Percentage": 1.22
+        },
+        {
+          "AttackDate": "2023-02-09",
+          "Total_Attack_Percentage": 1.12
+        },
+        {
+          "AttackDate": "2023-02-10",
+          "Total_Attack_Percentage": 1.12
+        },
+        {
+          "AttackDate": "2023-02-11",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-02-12",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-02-13",
+          "Total_Attack_Percentage": 0.74
+        },
+        {
+          "AttackDate": "2023-02-14",
+          "Total_Attack_Percentage": 0.4
+        },
+        {
+          "AttackDate": "2023-02-15",
+          "Total_Attack_Percentage": 1.33
+        },
+        {
+          "AttackDate": "2023-02-16",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2023-02-17",
+          "Total_Attack_Percentage": 1.13
+        },
+        {
+          "AttackDate": "2023-02-18",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-02-19",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-02-20",
+          "Total_Attack_Percentage": 0.66
+        },
+        {
+          "AttackDate": "2023-02-21",
+          "Total_Attack_Percentage": 0.42
+        },
+        {
+          "AttackDate": "2023-02-22",
+          "Total_Attack_Percentage": 0.95
+        },
+        {
+          "AttackDate": "2023-02-23",
+          "Total_Attack_Percentage": 0.36
+        },
+        {
+          "AttackDate": "2023-02-24",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2023-02-25",
+          "Total_Attack_Percentage": 1.23
+        },
+        {
+          "AttackDate": "2023-02-26",
+          "Total_Attack_Percentage": 1.15
+        },
+        {
+          "AttackDate": "2023-02-27",
+          "Total_Attack_Percentage": 0.78
+        },
+        {
+          "AttackDate": "2023-02-28",
+          "Total_Attack_Percentage": 0.48
+        },
+        {
+          "AttackDate": "2023-03-01",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-03-02",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-03-03",
+          "Total_Attack_Percentage": 1.32
+        },
+        {
+          "AttackDate": "2023-03-04",
+          "Total_Attack_Percentage": 1.51
+        },
+        {
+          "AttackDate": "2023-03-05",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-03-06",
+          "Total_Attack_Percentage": 0.86
+        },
+        {
+          "AttackDate": "2023-03-07",
+          "Total_Attack_Percentage": 0.57
+        },
+        {
+          "AttackDate": "2023-03-08",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2023-03-09",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-03-10",
+          "Total_Attack_Percentage": 0.77
+        },
+        {
+          "AttackDate": "2023-03-11",
+          "Total_Attack_Percentage": 1.39
+        },
+        {
+          "AttackDate": "2023-03-13",
+          "Total_Attack_Percentage": 0.9000000000000001
+        },
+        {
+          "AttackDate": "2023-03-14",
+          "Total_Attack_Percentage": 0.83
+        },
+        {
+          "AttackDate": "2023-03-15",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2023-03-16",
+          "Total_Attack_Percentage": 1.23
+        },
+        {
+          "AttackDate": "2023-03-17",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2023-03-18",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-03-19",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-03-20",
+          "Total_Attack_Percentage": 0.9899999999999999
+        },
+        {
+          "AttackDate": "2023-03-21",
+          "Total_Attack_Percentage": 0.44
+        },
+        {
+          "AttackDate": "2023-03-22",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-03-23",
+          "Total_Attack_Percentage": 1.15
+        },
+        {
+          "AttackDate": "2023-03-24",
+          "Total_Attack_Percentage": 1.03
+        },
+        {
+          "AttackDate": "2023-03-27",
+          "Total_Attack_Percentage": 0.67
+        },
+        {
+          "AttackDate": "2023-03-28",
+          "Total_Attack_Percentage": 0.58
+        },
+        {
+          "AttackDate": "2023-03-29",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-03-30",
+          "Total_Attack_Percentage": 1.09
+        },
+        {
+          "AttackDate": "2023-03-31",
+          "Total_Attack_Percentage": 1.33
+        },
+        {
+          "AttackDate": "2023-04-01",
+          "Total_Attack_Percentage": 1.2
+        },
+        {
+          "AttackDate": "2023-04-02",
+          "Total_Attack_Percentage": 1.39
+        },
+        {
+          "AttackDate": "2023-04-03",
+          "Total_Attack_Percentage": 0.83
+        },
+        {
+          "AttackDate": "2023-04-04",
+          "Total_Attack_Percentage": 0.48
+        },
+        {
+          "AttackDate": "2023-04-05",
+          "Total_Attack_Percentage": 1.04
+        },
+        {
+          "AttackDate": "2023-04-06",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-04-07",
+          "Total_Attack_Percentage": 1.12
+        },
+        {
+          "AttackDate": "2023-04-08",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-04-09",
+          "Total_Attack_Percentage": 1.11
+        },
+        {
+          "AttackDate": "2023-04-10",
+          "Total_Attack_Percentage": 0.48
+        },
+        {
+          "AttackDate": "2023-04-11",
+          "Total_Attack_Percentage": 0.44
+        },
+        {
+          "AttackDate": "2023-04-12",
+          "Total_Attack_Percentage": 0.76
+        },
+        {
+          "AttackDate": "2023-04-13",
+          "Total_Attack_Percentage": 1.44
+        },
+        {
+          "AttackDate": "2023-04-14",
+          "Total_Attack_Percentage": 2.0
+        },
+        {
+          "AttackDate": "2023-04-15",
+          "Total_Attack_Percentage": 1.08
+        },
+        {
+          "AttackDate": "2023-04-16",
+          "Total_Attack_Percentage": 1.45
+        },
+        {
+          "AttackDate": "2023-04-17",
+          "Total_Attack_Percentage": 0.93
+        },
+        {
+          "AttackDate": "2023-04-18",
+          "Total_Attack_Percentage": 0.89
+        },
+        {
+          "AttackDate": "2023-04-19",
+          "Total_Attack_Percentage": 1.56
+        },
+        {
+          "AttackDate": "2023-04-20",
+          "Total_Attack_Percentage": 1.67
+        },
+        {
+          "AttackDate": "2023-04-21",
+          "Total_Attack_Percentage": 1.4
+        },
+        {
+          "AttackDate": "2023-04-22",
+          "Total_Attack_Percentage": 1.41
+        },
+        {
+          "AttackDate": "2023-04-23",
+          "Total_Attack_Percentage": 0.97
+        },
+        {
+          "AttackDate": "2023-04-24",
+          "Total_Attack_Percentage": 0.66
+        },
+        {
+          "AttackDate": "2023-04-25",
+          "Total_Attack_Percentage": 0.53
+        },
+        {
+          "AttackDate": "2023-04-26",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-04-27",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-04-28",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-04-29",
+          "Total_Attack_Percentage": 1.54
+        },
+        {
+          "AttackDate": "2023-04-30",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-05-01",
+          "Total_Attack_Percentage": 0.76
+        },
+        {
+          "AttackDate": "2023-05-02",
+          "Total_Attack_Percentage": 0.6
+        },
+        {
+          "AttackDate": "2023-05-03",
+          "Total_Attack_Percentage": 0.49
+        },
+        {
+          "AttackDate": "2023-05-04",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-05-06",
+          "Total_Attack_Percentage": 1.32
+        },
+        {
+          "AttackDate": "2023-05-07",
+          "Total_Attack_Percentage": 1.58
+        },
+        {
+          "AttackDate": "2023-05-08",
+          "Total_Attack_Percentage": 1.1
+        },
+        {
+          "AttackDate": "2023-05-09",
+          "Total_Attack_Percentage": 0.8699999999999999
+        },
+        {
+          "AttackDate": "2023-05-10",
+          "Total_Attack_Percentage": 1.49
+        },
+        {
+          "AttackDate": "2023-05-12",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-05-13",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-05-14",
+          "Total_Attack_Percentage": 1.13
+        },
+        {
+          "AttackDate": "2023-05-15",
+          "Total_Attack_Percentage": 0.9899999999999999
+        },
+        {
+          "AttackDate": "2023-05-16",
+          "Total_Attack_Percentage": 0.79
+        },
+        {
+          "AttackDate": "2023-05-17",
+          "Total_Attack_Percentage": 1.59
+        },
+        {
+          "AttackDate": "2023-05-18",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-05-19",
+          "Total_Attack_Percentage": 1.29
+        },
+        {
+          "AttackDate": "2023-05-20",
+          "Total_Attack_Percentage": 1.33
+        },
+        {
+          "AttackDate": "2023-05-21",
+          "Total_Attack_Percentage": 0.63
+        },
+        {
+          "AttackDate": "2023-05-22",
+          "Total_Attack_Percentage": 0.57
+        },
+        {
+          "AttackDate": "2023-05-23",
+          "Total_Attack_Percentage": 0.49
+        },
+        {
+          "AttackDate": "2023-05-24",
+          "Total_Attack_Percentage": 1.0
+        },
+        {
+          "AttackDate": "2023-05-25",
+          "Total_Attack_Percentage": 1.31
+        },
+        {
+          "AttackDate": "2023-05-26",
+          "Total_Attack_Percentage": 2.9
+        },
+        {
+          "AttackDate": "2023-05-27",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2023-05-28",
+          "Total_Attack_Percentage": 1.9
+        },
+        {
+          "AttackDate": "2023-05-29",
+          "Total_Attack_Percentage": 0.71
+        },
+        {
+          "AttackDate": "2023-05-30",
+          "Total_Attack_Percentage": 0.45999999999999996
+        },
+        {
+          "AttackDate": "2023-05-31",
+          "Total_Attack_Percentage": 1.01
+        },
+        {
+          "AttackDate": "2023-06-01",
+          "Total_Attack_Percentage": 1.17
+        },
+        {
+          "AttackDate": "2023-06-02",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-06-03",
+          "Total_Attack_Percentage": 1.09
+        },
+        {
+          "AttackDate": "2023-06-04",
+          "Total_Attack_Percentage": 1.2
+        },
+        {
+          "AttackDate": "2023-06-05",
+          "Total_Attack_Percentage": 0.8500000000000001
+        },
+        {
+          "AttackDate": "2023-06-06",
+          "Total_Attack_Percentage": 0.43
+        },
+        {
+          "AttackDate": "2023-06-07",
+          "Total_Attack_Percentage": 1.8900000000000001
+        },
+        {
+          "AttackDate": "2023-06-08",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-06-09",
+          "Total_Attack_Percentage": 1.12
+        },
+        {
+          "AttackDate": "2023-06-10",
+          "Total_Attack_Percentage": 0.9899999999999999
+        },
+        {
+          "AttackDate": "2023-06-11",
+          "Total_Attack_Percentage": 0.84
+        },
+        {
+          "AttackDate": "2023-06-12",
+          "Total_Attack_Percentage": 0.84
+        },
+        {
+          "AttackDate": "2023-06-15",
+          "Total_Attack_Percentage": 1.35
+        },
+        {
+          "AttackDate": "2023-06-16",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-06-17",
+          "Total_Attack_Percentage": 1.37
+        },
+        {
+          "AttackDate": "2023-06-18",
+          "Total_Attack_Percentage": 1.71
+        },
+        {
+          "AttackDate": "2023-06-19",
+          "Total_Attack_Percentage": 0.61
+        },
+        {
+          "AttackDate": "2023-06-20",
+          "Total_Attack_Percentage": 0.6
+        },
+        {
+          "AttackDate": "2023-06-21",
+          "Total_Attack_Percentage": 1.26
+        },
+        {
+          "AttackDate": "2023-06-22",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2023-06-23",
+          "Total_Attack_Percentage": 1.92
+        },
+        {
+          "AttackDate": "2023-06-24",
+          "Total_Attack_Percentage": 1.59
+        },
+        {
+          "AttackDate": "2023-06-25",
+          "Total_Attack_Percentage": 1.77
+        },
+        {
+          "AttackDate": "2023-06-26",
+          "Total_Attack_Percentage": 0.83
+        },
+        {
+          "AttackDate": "2023-06-27",
+          "Total_Attack_Percentage": 0.38
+        },
+        {
+          "AttackDate": "2023-06-28",
+          "Total_Attack_Percentage": 0.18
+        },
+        {
+          "AttackDate": "2023-06-29",
+          "Total_Attack_Percentage": 1.36
+        },
+        {
+          "AttackDate": "2023-07-03",
+          "Total_Attack_Percentage": 0.48
+        },
+        {
+          "AttackDate": "2023-07-04",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-07-05",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-07-06",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-07-07",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2023-07-08",
+          "Total_Attack_Percentage": 1.23
+        },
+        {
+          "AttackDate": "2023-07-09",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2023-07-10",
+          "Total_Attack_Percentage": 1.04
+        },
+        {
+          "AttackDate": "2023-07-11",
+          "Total_Attack_Percentage": 0.54
+        },
+        {
+          "AttackDate": "2023-07-12",
+          "Total_Attack_Percentage": 1.32
+        },
+        {
+          "AttackDate": "2023-07-13",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2023-07-14",
+          "Total_Attack_Percentage": 1.7399999999999998
+        },
+        {
+          "AttackDate": "2023-07-15",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-07-16",
+          "Total_Attack_Percentage": 1.14
+        },
+        {
+          "AttackDate": "2023-07-17",
+          "Total_Attack_Percentage": 1.08
+        },
+        {
+          "AttackDate": "2023-07-18",
+          "Total_Attack_Percentage": 0.7
+        },
+        {
+          "AttackDate": "2023-07-19",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-07-20",
+          "Total_Attack_Percentage": 1.26
+        },
+        {
+          "AttackDate": "2023-07-21",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-07-22",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-07-23",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2023-07-24",
+          "Total_Attack_Percentage": 0.9399999999999998
+        },
+        {
+          "AttackDate": "2023-07-25",
+          "Total_Attack_Percentage": 0.49
+        },
+        {
+          "AttackDate": "2023-07-26",
+          "Total_Attack_Percentage": 0.49
+        },
+        {
+          "AttackDate": "2023-07-27",
+          "Total_Attack_Percentage": 1.6399999999999997
+        },
+        {
+          "AttackDate": "2023-07-28",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-07-29",
+          "Total_Attack_Percentage": 0.05
+        },
+        {
+          "AttackDate": "2023-07-31",
+          "Total_Attack_Percentage": 0.71
+        },
+        {
+          "AttackDate": "2023-08-01",
+          "Total_Attack_Percentage": 0.71
+        },
+        {
+          "AttackDate": "2023-08-02",
+          "Total_Attack_Percentage": 1.82
+        },
+        {
+          "AttackDate": "2023-08-03",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2023-08-04",
+          "Total_Attack_Percentage": 1.35
+        },
+        {
+          "AttackDate": "2023-08-07",
+          "Total_Attack_Percentage": 0.66
+        },
+        {
+          "AttackDate": "2023-08-08",
+          "Total_Attack_Percentage": 0.78
+        },
+        {
+          "AttackDate": "2023-08-09",
+          "Total_Attack_Percentage": 2.27
+        },
+        {
+          "AttackDate": "2023-08-10",
+          "Total_Attack_Percentage": 1.39
+        },
+        {
+          "AttackDate": "2023-08-11",
+          "Total_Attack_Percentage": 1.25
+        },
+        {
+          "AttackDate": "2023-08-12",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-08-13",
+          "Total_Attack_Percentage": 1.21
+        },
+        {
+          "AttackDate": "2023-08-14",
+          "Total_Attack_Percentage": 0.91
+        },
+        {
+          "AttackDate": "2023-08-15",
+          "Total_Attack_Percentage": 0.77
+        },
+        {
+          "AttackDate": "2023-08-16",
+          "Total_Attack_Percentage": 1.38
+        },
+        {
+          "AttackDate": "2023-08-17",
+          "Total_Attack_Percentage": 1.43
+        },
+        {
+          "AttackDate": "2023-08-18",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-08-19",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-08-20",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-08-21",
+          "Total_Attack_Percentage": 0.8699999999999999
+        },
+        {
+          "AttackDate": "2023-08-28",
+          "Total_Attack_Percentage": 0.66
+        },
+        {
+          "AttackDate": "2023-08-29",
+          "Total_Attack_Percentage": 0.66
+        },
+        {
+          "AttackDate": "2023-08-30",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2023-08-31",
+          "Total_Attack_Percentage": 1.34
+        },
+        {
+          "AttackDate": "2023-09-01",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-09-04",
+          "Total_Attack_Percentage": 0.84
+        },
+        {
+          "AttackDate": "2023-09-05",
+          "Total_Attack_Percentage": 0.62
+        },
+        {
+          "AttackDate": "2023-09-06",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-09-07",
+          "Total_Attack_Percentage": 1.52
+        },
+        {
+          "AttackDate": "2023-09-08",
+          "Total_Attack_Percentage": 1.6200000000000003
+        },
+        {
+          "AttackDate": "2023-09-09",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-09-10",
+          "Total_Attack_Percentage": 1.36
+        },
+        {
+          "AttackDate": "2023-09-11",
+          "Total_Attack_Percentage": 0.72
+        },
+        {
+          "AttackDate": "2023-09-12",
+          "Total_Attack_Percentage": 0.6
+        },
+        {
+          "AttackDate": "2023-09-13",
+          "Total_Attack_Percentage": 0.6
+        },
+        {
+          "AttackDate": "2023-09-15",
+          "Total_Attack_Percentage": 0.6
+        },
+        {
+          "AttackDate": "2023-09-16",
+          "Total_Attack_Percentage": 1.8799999999999997
+        },
+        {
+          "AttackDate": "2023-09-18",
+          "Total_Attack_Percentage": 0.8199999999999998
+        },
+        {
+          "AttackDate": "2023-09-19",
+          "Total_Attack_Percentage": 0.52
+        },
+        {
+          "AttackDate": "2023-09-20",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-09-21",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-09-22",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-09-23",
+          "Total_Attack_Percentage": 1.97
+        },
+        {
+          "AttackDate": "2023-09-24",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-09-25",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-09-26",
+          "Total_Attack_Percentage": 0.49
+        },
+        {
+          "AttackDate": "2023-09-27",
+          "Total_Attack_Percentage": 0.9000000000000001
+        },
+        {
+          "AttackDate": "2023-09-28",
+          "Total_Attack_Percentage": 2.01
+        },
+        {
+          "AttackDate": "2023-10-02",
+          "Total_Attack_Percentage": 0.55
+        },
+        {
+          "AttackDate": "2023-10-03",
+          "Total_Attack_Percentage": 0.55
+        },
+        {
+          "AttackDate": "2023-10-04",
+          "Total_Attack_Percentage": 1.38
+        },
+        {
+          "AttackDate": "2023-10-05",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-10-06",
+          "Total_Attack_Percentage": 1.68
+        },
+        {
+          "AttackDate": "2023-10-07",
+          "Total_Attack_Percentage": 1.68
+        },
+        {
+          "AttackDate": "2023-10-08",
+          "Total_Attack_Percentage": 1.9900000000000002
+        },
+        {
+          "AttackDate": "2023-10-09",
+          "Total_Attack_Percentage": 1.15
+        },
+        {
+          "AttackDate": "2023-10-10",
+          "Total_Attack_Percentage": 0.6
+        },
+        {
+          "AttackDate": "2023-10-11",
+          "Total_Attack_Percentage": 1.28
+        },
+        {
+          "AttackDate": "2023-10-12",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-10-13",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-10-14",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-10-15",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-10-16",
+          "Total_Attack_Percentage": 0.77
+        },
+        {
+          "AttackDate": "2023-10-17",
+          "Total_Attack_Percentage": 0.64
+        },
+        {
+          "AttackDate": "2023-10-18",
+          "Total_Attack_Percentage": 0.64
+        },
+        {
+          "AttackDate": "2023-10-19",
+          "Total_Attack_Percentage": 1.02
+        },
+        {
+          "AttackDate": "2023-10-20",
+          "Total_Attack_Percentage": 1.48
+        },
+        {
+          "AttackDate": "2023-10-21",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-10-22",
+          "Total_Attack_Percentage": 1.3
+        },
+        {
+          "AttackDate": "2023-10-26",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-10-27",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-10-28",
+          "Total_Attack_Percentage": 1.94
+        },
+        {
+          "AttackDate": "2023-10-29",
+          "Total_Attack_Percentage": 1.47
+        },
+        {
+          "AttackDate": "2023-10-30",
+          "Total_Attack_Percentage": 0.9199999999999999
+        },
+        {
+          "AttackDate": "2023-10-31",
+          "Total_Attack_Percentage": 0.68
+        },
+        {
+          "AttackDate": "2023-11-01",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-11-02",
+          "Total_Attack_Percentage": 1.24
+        },
+        {
+          "AttackDate": "2023-11-03",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-11-04",
+          "Total_Attack_Percentage": 0.73
+        },
+        {
+          "AttackDate": "2023-11-05",
+          "Total_Attack_Percentage": 1.91
+        },
+        {
+          "AttackDate": "2023-11-06",
+          "Total_Attack_Percentage": 0.7
+        },
+        {
+          "AttackDate": "2023-11-07",
+          "Total_Attack_Percentage": 0.5
+        },
+        {
+          "AttackDate": "2023-11-09",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-11-10",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-11-11",
+          "Total_Attack_Percentage": 2.01
+        },
+        {
+          "AttackDate": "2023-11-12",
+          "Total_Attack_Percentage": 1.71
+        },
+        {
+          "AttackDate": "2023-11-13",
+          "Total_Attack_Percentage": 0.62
+        },
+        {
+          "AttackDate": "2023-11-14",
+          "Total_Attack_Percentage": 0.57
+        },
+        {
+          "AttackDate": "2023-11-15",
+          "Total_Attack_Percentage": 1.78
+        },
+        {
+          "AttackDate": "2023-11-16",
+          "Total_Attack_Percentage": 2.48
+        },
+        {
+          "AttackDate": "2023-11-17",
+          "Total_Attack_Percentage": 1.6500000000000001
+        },
+        {
+          "AttackDate": "2023-11-18",
+          "Total_Attack_Percentage": 0.48
+        },
+        {
+          "AttackDate": "2023-11-19",
+          "Total_Attack_Percentage": 1.53
+        },
+        {
+          "AttackDate": "2023-11-20",
+          "Total_Attack_Percentage": 1.09
+        },
+        {
+          "AttackDate": "2023-11-21",
+          "Total_Attack_Percentage": 0.79
+        },
+        {
+          "AttackDate": "2023-11-22",
+          "Total_Attack_Percentage": 1.27
+        },
+        {
+          "AttackDate": "2023-11-23",
+          "Total_Attack_Percentage": 1.66
+        },
+        {
+          "AttackDate": "2023-11-24",
+          "Total_Attack_Percentage": 1.6099999999999999
+        },
+        {
+          "AttackDate": "2023-11-25",
+          "Total_Attack_Percentage": 1.7000000000000002
+        },
+        {
+          "AttackDate": "2023-11-26",
+          "Total_Attack_Percentage": 1.5700000000000003
+        },
+        {
+          "AttackDate": "2023-11-27",
+          "Total_Attack_Percentage": 0.97
+        },
+        {
+          "AttackDate": "2023-11-28",
+          "Total_Attack_Percentage": 0.55
+        },
+        {
+          "AttackDate": "2023-11-29",
+          "Total_Attack_Percentage": 1.38
+        },
+        {
+          "AttackDate": "2023-11-30",
+          "Total_Attack_Percentage": 1.55
+        },
+        {
+          "AttackDate": "2023-12-01",
+          "Total_Attack_Percentage": 2.25
+        },
+        {
+          "AttackDate": "2023-12-02",
+          "Total_Attack_Percentage": 1.58
+        },
+        {
+          "AttackDate": "2023-12-03",
+          "Total_Attack_Percentage": 0.77
+        },
+        {
+          "AttackDate": "2023-12-04",
+          "Total_Attack_Percentage": 0.8100000000000002
+        },
+        {
+          "AttackDate": "2023-12-05",
+          "Total_Attack_Percentage": 0.59
+        },
+        {
+          "AttackDate": "2023-12-06",
+          "Total_Attack_Percentage": 1.26
+        },
+        {
+          "AttackDate": "2023-12-07",
+          "Total_Attack_Percentage": 1.46
+        },
+        {
+          "AttackDate": "2023-12-08",
+          "Total_Attack_Percentage": 1.59
+        },
+        {
+          "AttackDate": "2023-12-09",
+          "Total_Attack_Percentage": 1.69
+        },
+        {
+          "AttackDate": "2023-12-10",
+          "Total_Attack_Percentage": 1.87
+        },
+        {
+          "AttackDate": "2023-12-11",
+          "Total_Attack_Percentage": 0.8100000000000002
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "region": "Africa",
+      "avgAttack": 0.5641836734693877
+    },
+    {
+      "region": "South America",
+      "avgAttack": 0.5025255102040816
+    },
+    {
+      "region": "Caribbean",
+      "avgAttack": 0.39465306122448984
+    },
+    {
+      "region": "Europe",
+      "avgAttack": 0.4737608695652174
+    },
+    {
+      "region": "Asia",
+      "avgAttack": 0.029459999999999823
+    }
+  ]
+}
