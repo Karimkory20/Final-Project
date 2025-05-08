@@ -8,13 +8,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
-  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/web/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="root"></div>
@@ -22,57 +21,89 @@
     const { useState, useEffect } = React;
     const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart, Bar, ResponsiveContainer, AreaChart, Area } = Recharts;
 
-    const loadFileData = (fileName) => {
-      return `Data/${fileName}`;
-    };
-
     const CyberattackReport = () => {
       const [data, setData] = useState(null);
-      const [filteredData, setFilteredData] = useState(null);
       const [loading, setLoading] = useState(true);
       const [darkMode, setDarkMode] = useState(localStorage.getItem('theme') === 'dark');
       const [collapsedSections, setCollapsedSections] = useState({});
       const [chartType, setChartType] = useState('line');
-      const [startDate, setStartDate] = useState('');
-      const [endDate, setEndDate] = useState('');
       const [selectedCountry, setSelectedCountry] = useState('');
+      const [viewMode, setViewMode] = useState('all'); // 'all' or 'selected'
+
+      const chartColors = {
+        dark: {
+          background: '#1a1a1a',
+          grid: '#333333',
+          text: '#e0e0e0',
+          tooltip: '#2d2d2d',
+          border: '#404040'
+        },
+        light: {
+          background: '#ffffff',
+          grid: '#e0e0e0',
+          text: '#333333',
+          tooltip: '#f5f5f5',
+          border: '#e0e0e0'
+        }
+      };
+
+      const getChartTheme = () => {
+        return darkMode ? chartColors.dark : chartColors.light;
+      };
+
+      const theme = getChartTheme();
+
+      const CustomTooltip = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          const theme = getChartTheme();
+          return (
+            <div style={{
+              backgroundColor: theme.tooltip,
+              border: `1px solid ${theme.border}`,
+              padding: '10px',
+              borderRadius: '4px',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+            }}>
+              <p style={{ margin: '0 0 5px 0', color: theme.text }}>{label}</p>
+              {payload.map((entry, index) => (
+                <p key={index} style={{ 
+                  margin: '0',
+                  color: entry.color,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}>
+                  <span style={{
+                    display: 'inline-block',
+                    width: '10px',
+                    height: '10px',
+                    backgroundColor: entry.color,
+                    borderRadius: '2px'
+                  }}></span>
+                  {entry.name}: {entry.value.toFixed(2)}%
+                </p>
+              ))}
+            </div>
+          );
+        }
+        return null;
+      };
 
       useEffect(() => {
-        fetch('Data/formatted_cyber_with_region.csv')
+        fetch('data.json')
           .then(response => {
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
-            return response.text();
+            return response.json();
           })
-          .then(csvText => {
-            const results = Papa.parse(csvText, {
-              header: true,
-              skipEmptyLines: true,
-              transformHeader: (header) => header.trim().replace(/^"|"$/g, ''),
-              transform: (value, header) => {
-                let cleaned = value.trim().replace(/^"|"$/g, '');
-                if (['Spam', 'Ransomware', 'Local Infection', 'Exploit', 'Malicious Mail', 'Network Attack', 'On Demand Scan', 'Web Threat', 'Total_Attack_Percentage'].includes(header)) {
-                  return parseFloat(cleaned) || 0;
-                }
-                return cleaned;
-              }
-            });
-
-            const cleanedData = results.data.map(row => ({
-              ...row,
-              AttackDate: chrono.parseDate(row['AttackDate']),
-              Total_Attack_Percentage: parseFloat(row['Total_Attack_Percentage']) || 0
-            })).filter(row => row.AttackDate && !isNaN(row.Total_Attack_Percentage));
-
-            console.log('Parsed Data:', results.data);
-            console.log('Cleaned Data:', cleanedData);
-            setData(cleanedData);
-            setFilteredData(cleanedData);
+          .then(jsonData => {
+            console.log('Loaded JSON Data:', jsonData);
+            setData(jsonData);
             setLoading(false);
           })
           .catch(error => {
-            console.error('Error fetching or parsing CSV:', error);
+            console.error('Error fetching JSON:', error);
             setLoading(false);
           });
       }, []);
@@ -102,28 +133,6 @@
         setChartType(chartType === 'line' ? 'area' : 'line');
       };
 
-      const applyFilters = () => {
-        if (!data) return;
-        let filtered = [...data];
-        if (startDate) {
-          filtered = filtered.filter(row => row.AttackDate >= new Date(startDate));
-        }
-        if (endDate) {
-          filtered = filtered.filter(row => row.AttackDate <= new Date(endDate));
-        }
-        if (selectedCountry) {
-          filtered = filtered.filter(row => row.Country === selectedCountry);
-        }
-        setFilteredData(filtered);
-      };
-
-      const resetFilters = () => {
-        setStartDate('');
-        setEndDate('');
-        setSelectedCountry('');
-        setFilteredData(data);
-      };
-
       const exportChart = (chartId) => {
         const chartElement = document.getElementById(chartId);
         if (!chartElement) return;
@@ -135,47 +144,72 @@
         });
       };
 
-      const exportCSV = () => {
-        if (!filteredData) return;
-        const csv = Papa.unparse(filteredData);
-        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = 'cyberattack_data.csv';
-        link.click();
+      const monthFormatter = (dateStr) => {
+        const date = new Date(dateStr);
+        if (isNaN(date)) return dateStr;
+        return date.toLocaleString('default', { month: 'short', year: '2-digit' });
+      };
+
+      const groupDataByMonth = (dataArr) => {
+        const grouped = {};
+        dataArr.forEach(item => {
+          const date = new Date(item.date || item.AttackDate);
+          if (isNaN(date)) return;
+          const key = `${date.getFullYear()}-${date.getMonth()}`;
+          if (!grouped[key]) grouped[key] = { sum: 0, count: 0, label: date.toLocaleString('default', { month: 'short', year: '2-digit' }) };
+          grouped[key].sum += item.Total_Attack_Percentage;
+          grouped[key].count += 1;
+        });
+        return Object.values(grouped).map(g => ({ month: g.label, avg: g.sum / g.count }));
+      };
+
+      const getInsights = (countries) => {
+        if (!countries) return null;
+        
+        const insights = {
+          highestIncrease: { country: '', value: -Infinity },
+          highestDecrease: { country: '', value: Infinity },
+          highestAverage: { country: '', value: -Infinity },
+          mostVolatile: { country: '', value: -Infinity }
+        };
+
+        countries.forEach(country => {
+          const change = country.prediction_change || 0;
+          const avg = country.data?.reduce((sum, d) => sum + (d.Total_Attack_Percentage || 0), 0) / (country.data?.length || 1);
+          const volatility = country.data?.reduce((sum, d, i, arr) => {
+            if (i === 0) return 0;
+            return sum + Math.abs((d.Total_Attack_Percentage || 0) - (arr[i-1].Total_Attack_Percentage || 0));
+          }, 0) / (country.data?.length || 1);
+
+          if (change > insights.highestIncrease.value) {
+            insights.highestIncrease = { country: country.name, value: change };
+          }
+          if (change < insights.highestDecrease.value) {
+            insights.highestDecrease = { country: country.name, value: change };
+          }
+          if (avg > insights.highestAverage.value) {
+            insights.highestAverage = { country: country.name, value: avg };
+          }
+          if (volatility > insights.mostVolatile.value) {
+            insights.mostVolatile = { country: country.name, value: volatility };
+          }
+        });
+
+        return insights;
       };
 
       if (loading) return <div className="loading" role="status" aria-live="polite">Loading...</div>;
 
-      const topCountries = ['United States of America', 'People\'s Republic of China', 'Russian Federation', 'Kingdom of the Netherlands', 'French Republic'];
-      const countryData = topCountries.map(country => ({
-        name: country,
-        data: (filteredData || []).filter(row => row.Country === country)
-          .sort((a, b) => a.AttackDate - b.AttackDate)
-          .map(row => ({
-            date: row.AttackDate.toISOString().split('T')[0],
-            value: row.Total_Attack_Percentage
-          }))
-      }));
-
-      const regions = [...new Set((filteredData || []).map(row => row.Region))].filter(r => r !== 'Unknown Region');
-      const regionData = regions.map(region => ({
-        region,
-        avgAttack: (filteredData || []).filter(row => row.Region === region)
-          .reduce((sum, row) => sum + row.Total_Attack_Percentage, 0) / 
-          (filteredData || []).filter(row => row.Region === region).length
-      }));
-
-      const futureData = countryData[0].data.slice(-10).map((d, i) => ({
-        date: new Date(new Date(d.date).getTime() + (i + 1) * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-        value: d.value * (1 + Math.random() * 0.1 - 0.05)
-      }));
-
-      const allCountries = [...new Set((data || []).map(row => row.Country))].sort();
-
       return (
-        <div className={`report-container ${darkMode ? 'dark-mode' : ''}`}>
-          <header className="report-header" role="banner">
+        <div className={`report-container ${darkMode ? 'dark-mode' : ''}`} style={{
+          backgroundColor: darkMode ? '#121212' : '#ffffff',
+          color: darkMode ? '#e0e0e0' : '#333333',
+          minHeight: '100vh'
+        }}>
+          <header className="report-header" role="banner" style={{
+            backgroundColor: darkMode ? '#1a1a1a' : '#ffffff',
+            borderBottom: `1px solid ${darkMode ? '#333333' : '#e0e0e0'}`
+          }}>
             <div className="header-content">
               <i className="fas fa-shield-alt header-icon" aria-hidden="true"></i>
               <h1>Global Cyberattack Analysis Report</h1>
@@ -197,206 +231,416 @@
             </nav>
           </header>
 
-          <main className="report-main" role="main">
-            <section id="filters" className="report-section filter-section" aria-labelledby="filters-heading">
-              <h2 id="filters-heading"><i className="fas fa-filter"></i> Data Filters</h2>
-              <div className="report-card filter-card">
-                <div className="filter-group">
-                  <label htmlFor="start-date">Start Date:</label>
-                  <input
-                    type="date"
-                    id="start-date"
-                    value={startDate}
-                    onChange={(e) => setStartDate(e.target.value)}
-                    aria-describedby="start-date-desc"
-                  />
-                  <span id="start-date-desc" className="sr-only">Select the start date for filtering data</span>
-                </div>
-                <div className="filter-group">
-                  <label htmlFor="end-date">End Date:</label>
-                  <input
-                    type="date"
-                    id="end-date"
-                    value={endDate}
-                    onChange={(e) => setEndDate(e.target.value)}
-                    aria-describedby="end-date-desc"
-                  />
-                  <span id="end-date-desc" className="sr-only">Select the end date for filtering data</span>
-                </div>
-                <div className="filter-group">
-                  <label htmlFor="country">Country:</label>
+          <main className="report-main" role="main" style={{
+            padding: '20px',
+            maxWidth: '1400px',
+            margin: '0 auto'
+          }}>
+            <section id="summary" className={`report-section ${collapsedSections.summary ? 'collapsed' : ''}`}>
+              <h2>Summary</h2>
+              <div className="summary-content">
+                <p>Last Updated: {data?.last_updated || 'N/A'}</p>
+                <p>Total Countries Analyzed: {data?.countries?.length || 0}</p>
+                <p>Total Regions Analyzed: {data?.regions?.length || 0}</p>
+                
+                {data?.countries && (
+                  <div className="insights-grid" style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(2, 1fr)',
+                    gap: '20px',
+                    marginTop: '20px'
+                  }}>
+                    {(() => {
+                      const insights = getInsights(data.countries);
+                      if (!insights) return null;
+                      
+                      return (
+                        <>
+                          <div className="insight-card" style={{
+                            padding: '15px',
+                            borderRadius: '8px',
+                            backgroundColor: darkMode ? '#2d3748' : '#f7fafc',
+                            border: '1px solid #e2e8f0'
+                          }}>
+                            <h3 style={{ color: darkMode ? '#e2e8f0' : '#2d3748', marginBottom: '10px' }}>
+                              Highest Increase
+                            </h3>
+                            <p style={{ fontSize: '1.2em', color: '#48bb78' }}>
+                              {insights.highestIncrease.country}: {insights.highestIncrease.value.toFixed(2)}%
+                            </p>
+                          </div>
+                          
+                          <div className="insight-card" style={{
+                            padding: '15px',
+                            borderRadius: '8px',
+                            backgroundColor: darkMode ? '#2d3748' : '#f7fafc',
+                            border: '1px solid #e2e8f0'
+                          }}>
+                            <h3 style={{ color: darkMode ? '#e2e8f0' : '#2d3748', marginBottom: '10px' }}>
+                              Highest Decrease
+                            </h3>
+                            <p style={{ fontSize: '1.2em', color: '#f56565' }}>
+                              {insights.highestDecrease.country}: {insights.highestDecrease.value.toFixed(2)}%
+                            </p>
+                          </div>
+                          
+                          <div className="insight-card" style={{
+                            padding: '15px',
+                            borderRadius: '8px',
+                            backgroundColor: darkMode ? '#2d3748' : '#f7fafc',
+                            border: '1px solid #e2e8f0'
+                          }}>
+                            <h3 style={{ color: darkMode ? '#e2e8f0' : '#2d3748', marginBottom: '10px' }}>
+                              Highest Average
+                            </h3>
+                            <p style={{ fontSize: '1.2em', color: '#4299e1' }}>
+                              {insights.highestAverage.country}: {insights.highestAverage.value.toFixed(2)}%
+                            </p>
+                          </div>
+                          
+                          <div className="insight-card" style={{
+                            padding: '15px',
+                            borderRadius: '8px',
+                            backgroundColor: darkMode ? '#2d3748' : '#f7fafc',
+                            border: '1px solid #e2e8f0'
+                          }}>
+                            <h3 style={{ color: darkMode ? '#e2e8f0' : '#2d3748', marginBottom: '10px' }}>
+                              Most Volatile
+                            </h3>
+                            <p style={{ fontSize: '1.2em', color: '#ed8936' }}>
+                              {insights.mostVolatile.country}: {insights.mostVolatile.value.toFixed(2)}%
+                            </p>
+                          </div>
+                        </>
+                      );
+                    })()}
+                  </div>
+                )}
+              </div>
+            </section>
+
+            <section id="time-series" className={`report-section ${collapsedSections['time-series'] ? 'collapsed' : ''}`}>
+              <h2 style={{
+                color: darkMode ? '#ffffff' : '#1a1a1a',
+                marginBottom: '20px',
+                fontSize: '1.8em'
+              }}>Time Series Analysis</h2>
+              <div className="section-description">
+                <p>This section shows the time series analysis for the top 10 countries with the highest cyberattack percentages. The data has been processed using LSTM models for accurate predictions.</p>
+              </div>
+              <div style={{ marginBottom: '1rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                <div>
+                  <label htmlFor="country-select" style={{ marginRight: '0.5rem' }}>Select Country:</label>
                   <select
-                    id="country"
+                    id="country-select"
                     value={selectedCountry}
-                    onChange={(e) => setSelectedCountry(e.target.value)}
-                    aria-describedby="country-desc"
+                    onChange={e => setSelectedCountry(e.target.value)}
+                    style={{ padding: '0.5rem', borderRadius: '4px', minWidth: '200px' }}
                   >
                     <option value="">All Countries</option>
-                    {allCountries.map(country => (
-                      <option key={country} value={country}>{country}</option>
+                    {data?.countries?.filter(country => [
+                      "United States of America",
+                      "People's Republic of China",
+                      "Russian Federation",
+                      "Islamic Republic of Afghanistan",
+                      "People's Democratic Republic of Algeria",
+                      "Socialist Republic of Vietnam",
+                      "Kingdom of the Netherlands",
+                      "People's Republic of Bangladesh",
+                      "Union of the Comoros",
+                      "Republic of Guinea-Bissau"
+                    ].includes(country.name)).map(country => (
+                      <option key={country.name} value={country.name}>{country.name}</option>
                     ))}
                   </select>
-                  <span id="country-desc" className="sr-only">Select a country to filter data</span>
                 </div>
-                <div className="filter-buttons">
-                  <button onClick={applyFilters} className="filter-button" aria-label="Apply filters to data">
-                    Apply Filters
-                  </button>
-                  <button onClick={resetFilters} className="filter-button reset-button" aria-label="Reset all filters">
-                    Reset
-                  </button>
-                </div>
-              </div>
-            </section>
-
-            <section id="summary" className={`report-section ${collapsedSections.summary ? 'collapsed' : ''}`} aria-labelledby="summary-heading">
-              <h2 id="summary-heading" onClick={() => toggleSection('summary')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('summary')}>
-                <i className="fas fa-info-circle" aria-hidden="true"></i> Summary
-                <i className={`fas fa-chevron-${collapsedSections.summary ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
-              </h2>
-              <div className="report-card">
-                <p>
-                  This report analyzes global cyberattacks from October 2022 to December 2023, using LSTM models to predict future attack percentages. Key findings include high attack volumes in the United States and China, with emerging risks in regions like Africa. Our predictions help prioritize cybersecurity resources.
-                </p>
-                <div className="highlight">
-                  <strong>Interesting Fact:</strong> Countries like Afghanistan show unexpectedly high attack percentages, possibly due to targeted campaigns or underreported infrastructure vulnerabilities.
+                <div>
+                  <label htmlFor="view-mode" style={{ marginRight: '0.5rem' }}>View Mode:</label>
+                  <select
+                    id="view-mode"
+                    value={viewMode}
+                    onChange={e => setViewMode(e.target.value)}
+                    style={{ padding: '0.5rem', borderRadius: '4px' }}
+                  >
+                    <option value="all">All Countries</option>
+                    <option value="selected">Selected Country Only</option>
+                  </select>
                 </div>
               </div>
-            </section>
+              {(() => {
+                const processedCountries = data?.countries?.filter(country => [
+                  "United States of America",
+                  "People's Republic of China",
+                  "Russian Federation",
+                  "Islamic Republic of Afghanistan",
+                  "People's Democratic Republic of Algeria",
+                  "Socialist Republic of Vietnam",
+                  "Kingdom of the Netherlands",
+                  "People's Republic of Bangladesh",
+                  "Union of the Comoros",
+                  "Republic of Guinea-Bissau"
+                ].includes(country.name));
 
-            <section id="time-series" className={`report-section ${collapsedSections['time-series'] ? 'collapsed' : ''}`} aria-labelledby="time-series-heading">
-              <h2 id="time-series-heading" onClick={() => toggleSection('time-series')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('time-series')}>
-                <i className="fas fa-chart-line" aria-hidden="true"></i> Time Series of Cyberattacks
-                <i className={`fas fa-chevron-${collapsedSections['time-series'] ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
-              </h2>
-              <div className="report-card">
-                <button onClick={toggleChartType} className="chart-toggle" aria-label={`Switch to ${chartType === 'line' ? 'Area' : 'Line'} Chart`}>
-                  Switch to {chartType === 'line' ? 'Area' : 'Line'} Chart
-                </button>
-                {countryData.map((country, index) => (
-                  <div key={country.name} className="chart-card" id={`time-series-chart-${index}`}>
-                    <h3>{country.name}</h3>
-                    <div className="chart-container">
-                      <ResponsiveContainer width="100%" height={300}>
-                        {chartType === 'line' ? (
-                          <LineChart data={country.data}>
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="date" fontSize={12} tickFormatter={(date) => new Date(date).toLocaleDateString()} />
-                            <YAxis fontSize={12} unit="%" />
-                            <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
-                            <Legend />
-                            <Line type="monotone" dataKey="value" name="Attack Percentage" stroke="#4f46e5" strokeWidth={2} />
-                          </LineChart>
-                        ) : (
-                          <AreaChart data={country.data}>
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="date" fontSize={12} tickFormatter={(date) => new Date(date).toLocaleDateString()} />
-                            <YAxis fontSize={12} unit="%" />
-                            <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
-                            <Legend />
-                            <Area type="monotone" dataKey="value" name="Attack Percentage" fill="url(#areaGradient)" stroke="#4f46e5" strokeWidth={2} />
-                            <defs>
-                              <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="5%" stopColor="#4f46e5" stopOpacity={0.8}/>
-                                <stop offset="95%" stopColor="#4f46e5" stopOpacity={0.1}/>
-                              </linearGradient>
-                            </defs>
-                          </AreaChart>
-                        )}
-                      </ResponsiveContainer>
-                    </div>
-                    <button onClick={() => exportChart(`time-series-chart-${index}`)} className="export-button" aria-label={`Export ${country.name} chart as PNG`}>
-                      Export Chart
-                    </button>
+                if (!processedCountries || processedCountries.length === 0) {
+                  return <div>No data available for the selected countries.</div>;
+                }
+
+                const filteredCountries = viewMode === 'selected' && selectedCountry
+                  ? processedCountries.filter(country => country.name === selectedCountry)
+                  : processedCountries;
+
+                return (
+                  <div className="charts-container" style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: viewMode === 'selected' ? '1fr' : 'repeat(2, 1fr)', 
+                    gap: '20px', 
+                    padding: '20px' 
+                  }}>
+                    {filteredCountries.map((country, index) => {
+                      const monthlyData = groupDataByMonth(country.data);
+                      const predictions = country.predictions || {};
+                      const predictionEntries = Object.entries(predictions).map(([date, value]) => ({
+                        month: new Date(date).toLocaleString('default', { month: 'short', year: '2-digit' }),
+                        avg: value,
+                        isPrediction: true
+                      }));
+
+                      const combinedData = [...monthlyData, ...predictionEntries];
+                      const mainColor = `hsl(${index * 36}, 70%, 50%)`;
+                      const predictionColor = `hsl(${index * 36}, 70%, 35%)`;
+
+                      return (
+                        <div key={country.name} className="prediction-card" style={{ 
+                          border: `1px solid #e5e7eb`,
+                          borderRadius: '8px',
+                          padding: '15px',
+                          backgroundColor: darkMode ? '#1f2937' : '#ffffff'
+                        }}>
+                          <h3 style={{ marginBottom: '15px', color: darkMode ? '#ffffff' : '#1f2937' }}>{country.name}</h3>
+                          <div className="prediction-chart" id={`chart-${country.name}`}>
+                            <ResponsiveContainer width="100%" height={300}>
+                              {chartType === 'line' ? (
+                                <LineChart data={combinedData}>
+                                  <CartesianGrid strokeDasharray="3 3" />
+                                  <XAxis dataKey="month" />
+                                  <YAxis />
+                                  <Tooltip />
+                                  <Legend />
+                                  <Line
+                                    type="monotone"
+                                    dataKey="avg"
+                                    name="Historical & Predicted"
+                                    stroke={mainColor}
+                                    strokeWidth={2}
+                                  />
+                                </LineChart>
+                              ) : (
+                                <AreaChart data={combinedData}>
+                                  <CartesianGrid strokeDasharray="3 3" />
+                                  <XAxis dataKey="month" />
+                                  <YAxis />
+                                  <Tooltip />
+                                  <Legend />
+                                  <Area
+                                    type="monotone"
+                                    dataKey="avg"
+                                    name="Historical & Predicted"
+                                    fill={mainColor}
+                                    stroke={mainColor}
+                                  />
+                                </AreaChart>
+                              )}
+                            </ResponsiveContainer>
+                          </div>
+                          <div style={{ marginTop: '10px', textAlign: 'center' }}>
+                            <button 
+                              className="chart-toggle" 
+                              onClick={toggleChartType}
+                              style={{
+                                padding: '8px 16px',
+                                borderRadius: '4px',
+                                border: '1px solid #e5e7eb',
+                                backgroundColor: darkMode ? '#374151' : '#f3f4f6',
+                                color: darkMode ? '#ffffff' : '#1f2937',
+                                cursor: 'pointer'
+                              }}
+                            >
+                              Switch to {chartType === 'line' ? 'Area' : 'Line'} Chart
+                            </button>
+                            <button 
+                              className="export-button" 
+                              onClick={() => exportChart(`chart-${country.name}`)}
+                              style={{
+                                padding: '8px 16px',
+                                borderRadius: '4px',
+                                border: '1px solid #e5e7eb',
+                                backgroundColor: darkMode ? '#374151' : '#f3f4f6',
+                                color: darkMode ? '#ffffff' : '#1f2937',
+                                cursor: 'pointer',
+                                marginLeft: '10px'
+                              }}
+                            >
+                              Export Chart
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                ))}
-              </div>
+                );
+              })()}
             </section>
 
-            <section id="regional" className={`report-section ${collapsedSections.regional ? 'collapsed' : ''}`} aria-labelledby="regional-heading">
-              <h2 id="regional-heading" onClick={() => toggleSection('regional')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('regional')}>
-                <i className="fas fa-globe" aria-hidden="true"></i> Regional Attack Distribution
-                <i className={`fas fa-chevron-${collapsedSections.regional ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
-              </h2>
-              <div className="report-card">
-                <div className="chart-container" id="regional-chart">
-                  <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={regionData}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="region" fontSize={12} angle={-45} textAnchor="end" />
-                      <YAxis fontSize={12} unit="%" />
-                      <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
-                      <Legend />
-                      <Bar dataKey="avgAttack" name="Average Attack Percentage" fill="#10b981" />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </div>
-                <button onClick={() => exportChart('regional-chart')} className="export-button" aria-label="Export regional chart as PNG">
+            <section id="regional" className={`report-section ${collapsedSections.regional ? 'collapsed' : ''}`}>
+              <h2>Regional Analysis</h2>
+              <div className="chart-container" id="regional-chart">
+                <ResponsiveContainer width="100%" height={400}>
+                  <BarChart data={data?.regions}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="region" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="avgAttack" name="Average Attack Percentage" fill="#8884d8" />
+                  </BarChart>
+                </ResponsiveContainer>
+                <button className="export-button" onClick={() => exportChart('regional-chart')}>
                   Export Chart
                 </button>
               </div>
             </section>
 
-            <section id="predictions" className={`report-section ${collapsedSections.predictions ? 'collapsed' : ''}`} aria-labelledby="predictions-heading">
-              <h2 id="predictions-heading" onClick={() => toggleSection('predictions')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('predictions')}>
-                <i className="fas fa-chart-area" aria-hidden="true"></i> Future Predictions (Next 30 Days)
-                <i className={`fas fa-chevron-${collapsedSections.predictions ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
-              </h2>
-              <div className="report-card">
-                <div className="chart-container" id="predictions-chart">
-                  <ResponsiveContainer width="100%" height={300}>
-                    <LineChart data={futureData}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="date" fontSize={12} tickFormatter={(date) => new Date(date).toLocaleDateString()} />
-                      <YAxis fontSize={12} unit="%" />
-                      <Tooltip contentStyle={{ backgroundColor: darkMode ? '#1f2937' : '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }} />
-                      <Legend />
-                      <Line type="monotone" dataKey="value" name="Predicted Attack Percentage" stroke="#f97316" strokeWidth={2} />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </div>
-                <button onClick={() => exportChart('predictions-chart')} className="export-button" aria-label="Export predictions chart as PNG">
-                  Export Chart
-                </button>
+            <section id="predictions" className={`report-section ${collapsedSections.predictions ? 'collapsed' : ''}`}>
+              <h2>Future Predictions</h2>
+              <div className="predictions-container">
+                {data?.countries?.map((country, index) => {
+                  const predictions = country.predictions || {};
+                  const dataArr = country.data || [];
+                  const predictionChange = country.prediction_change ?? 0;
+                  const predictionEntries = Object.entries(predictions);
+                  const predictionAvg = predictionEntries.length > 0 ? (Object.values(predictions).reduce((a, b) => a + b, 0) / predictionEntries.length) : 0;
+                  return (
+                    <div key={country.name} className="prediction-card">
+                      <h3>{country.name}</h3>
+                      <div className="prediction-content">
+                        <div className="prediction-chart">
+                          <ResponsiveContainer width="100%" height={200}>
+                            <LineChart data={[...dataArr, ...predictionEntries.map(([date, value]) => ({ date, Total_Attack_Percentage: value }))]}>
+                              <CartesianGrid strokeDasharray="3 3" />
+                              <XAxis dataKey="date" />
+                              <YAxis />
+                              <Tooltip />
+                              <Line
+                                type="monotone"
+                                dataKey="Total_Attack_Percentage"
+                                stroke={`hsl(${index * 60}, 70%, 50%)`}
+                                strokeDasharray={dataArr.length > 0 ? "0" : "5 5"}
+                              />
+                            </LineChart>
+                          </ResponsiveContainer>
+                        </div>
+                        <div className="prediction-stats">
+                          <p>Predicted Change: {predictionChange.toFixed(2)}%</p>
+                          <p>Last Value: {dataArr.length > 0 ? (dataArr[dataArr.length - 1]?.Total_Attack_Percentage?.toFixed(2) ?? 'N/A') : 'N/A'}%</p>
+                          <p>Predicted Average: {predictionAvg.toFixed(2)}%</p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </section>
 
-            <section id="conclusion" className={`report-section ${collapsedSections.conclusion ? 'collapsed' : ''}`} aria-labelledby="conclusion-heading">
-              <h2 id="conclusion-heading" onClick={() => toggleSection('conclusion')} role="button" tabIndex="0" onKeyDown={(e) => e.key === 'Enter' && toggleSection('conclusion')}>
-                <i className="fas fa-flag-checkered" aria-hidden="true"></i> Conclusion
-                <i className={`fas fa-chevron-${collapsedSections.conclusion ? 'down' : 'up'} section-toggle`} aria-hidden="true"></i>
-              </h2>
-              <div className="report-card">
-                <p>
-                  Our LSTM-based predictions highlight the United States and China as primary cyberattack targets, with emerging risks in Africa and South America. Stakeholders should prioritize enhanced cybersecurity measures, such as intrusion detection systems and employee training, in these regions to mitigate future threats.
-                </p>
-              </div>
-            </section>
-
-            <section id="export-data" className="report-section" aria-labelledby="export-data-heading">
-              <h2 id="export-data-heading"><i className="fas fa-download"></i> Export Data</h2>
-              <div className="report-card">
-                <button onClick={exportCSV} className="export-button" aria-label="Export filtered data as CSV">
-                  Export Data as CSV
-                </button>
+            <section id="conclusion" className={`report-section ${collapsedSections.conclusion ? 'collapsed' : ''}`}>
+              <h2>Conclusion</h2>
+              <div className="conclusion-content">
+                <p>This report provides a comprehensive analysis of cyberattack trends across different countries and regions, including future predictions using LSTM models.</p>
+                <p>The predictions are based on historical data and should be interpreted with consideration of current cybersecurity trends and events.</p>
               </div>
             </section>
           </main>
 
-          <footer className="report-footer" role="contentinfo">
-            <p>© 2025 Cyberattack Analysis Team</p>
-            <div className="footer-links">
-              <a href="mailto:contact@cyberanalysis.org" aria-label="Contact us via email"><i className="fas fa-envelope" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/cyberanalysis" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i className="fab fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://linkedin.com/company/cyberanalysis" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i className="fab fa-linkedin" aria-hidden="true"></i></a>
-            </div>
+          <footer className="report-footer" role="contentinfo" style={{
+            backgroundColor: darkMode ? '#1a1a1a' : '#ffffff',
+            borderTop: `1px solid ${darkMode ? '#333333' : '#e0e0e0'}`,
+            padding: '20px',
+            textAlign: 'center',
+            color: theme.text
+          }}>
+            <p>© {new Date().getFullYear()} Cyberattack Analysis Report</p>
           </footer>
         </div>
       );
     };
 
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<CyberattackReport />);
+    // Add global styles
+    const style = document.createElement('style');
+    style.textContent = `
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        transition: background-color 0.3s ease;
+      }
+      
+      .dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      
+      .report-container {
+        min-height: 100vh;
+      }
+      
+      .report-header {
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(10px);
+      }
+      
+      .report-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+      }
+      
+      .report-nav a {
+        color: inherit;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+      }
+      
+      .report-nav a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      
+      .report-section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      
+      .report-section.collapsed {
+        display: none;
+      }
+      
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-size: 1.2rem;
+      }
+    `;
+    document.head.appendChild(style);
+
+    ReactDOM.render(<CyberattackReport />, document.getElementById('root'));
   </script>
 </body>
 </html>
