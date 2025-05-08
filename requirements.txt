@@ -1,5 +1,7 @@
-pandas==2.2.2
-numpy==1.26.4
-tensorflow==2.17.0
-scikit-learn==1.5.1
-matplotlib==3.9.2
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+scikit-learn>=0.24.0
+openpyxl>=3.0.0  # for Excel file support
+tensorflow>=2.6.0  # for LSTM model
+seaborn>=0.11.0  # for better visualizations

@@ -8,14 +8,19 @@ Original file is located at
 """
 
 import numpy as np
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import train_test_split
+from preprocess import prepare_time_series, create_sequences
 import os
 import pandas as pd
 import json
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
 
 
 def load_data(file_path):
@@ -51,6 +56,107 @@ def preprocess_data(series, seq_length=10):
         X.append(data[i:i + seq_length])
         y.append(data[i + seq_length])
     return np.array(X), np.array(y), scaler
+
+
+def create_lstm_model(seq_length):
+    """Create and compile LSTM model."""
+    model = Sequential([
+        LSTM(50, activation='relu', input_shape=(seq_length, 1), return_sequences=True),
+        Dropout(0.2),
+        LSTM(50, activation='relu'),
+        Dropout(0.2),
+        Dense(1)
+    ])
+    
+    model.compile(optimizer=Adam(learning_rate=0.001),
+                 loss='mse',
+                 metrics=['mae'])
+    
+    return model
+
+
+def train_lstm_model(df, country, seq_length=10, epochs=50):
+    """Train LSTM model for a specific country."""
+    print(f"\nTraining LSTM model for {country}...")
+    
+    # Prepare data
+    series = prepare_time_series(df, country)
+    X, y, scaler = create_sequences(series, seq_length)
+    
+    # Split data
+    train_size = int(len(X) * 0.8)
+    X_train, X_test = X[:train_size], X[train_size:]
+    y_train, y_test = y[:train_size], y[train_size:]
+    
+    # Create and train model
+    model = create_lstm_model(seq_length)
+    
+    # Train the model
+    history = model.fit(
+        X_train, y_train,
+        epochs=epochs,
+        batch_size=32,
+        validation_data=(X_test, y_test),
+        verbose=1
+    )
+    
+    # Plot training history
+    plt.figure(figsize=(10, 6))
+    plt.plot(history.history['loss'], label='Training Loss')
+    plt.plot(history.history['val_loss'], label='Validation Loss')
+    plt.title(f'Model Loss for {country}')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.savefig(f'loss_{country.replace(" ", "_")}.png')
+    plt.close()
+    
+    return model, scaler
+
+
+def generate_predictions(model, scaler, df, country, seq_length=10, days=180):
+    """Generate 6-month predictions for a country."""
+    print(f"Generating 6-month predictions for {country}...")
+    
+    # Get the last sequence
+    series = prepare_time_series(df, country)
+    last_sequence = series.values[-seq_length:]
+    
+    # Scale the sequence
+    scaled_sequence = scaler.transform(last_sequence)
+    
+    # Generate predictions
+    predictions = []
+    current_sequence = scaled_sequence.copy()
+    
+    for _ in range(days):
+        # Reshape for prediction
+        X = current_sequence.reshape(1, seq_length, 1)
+        
+        # Predict next value
+        next_pred = model.predict(X, verbose=0)
+        predictions.append(next_pred[0, 0])
+        
+        # Update sequence
+        current_sequence = np.roll(current_sequence, -1)
+        current_sequence[-1] = next_pred
+    
+    # Inverse transform predictions
+    predictions = np.array(predictions).reshape(-1, 1)
+    predictions = scaler.inverse_transform(predictions)
+    
+    # Plot predictions
+    plt.figure(figsize=(12, 6))
+    plt.plot(range(days), predictions, label='Predicted')
+    plt.title(f'6-Month Forecast for {country}')
+    plt.xlabel('Days into Future')
+    plt.ylabel('Attack Percentage')
+    plt.legend()
+    plt.grid(True)
+    plt.savefig(f'forecast_{country.replace(" ", "_")}.png')
+    plt.close()
+    
+    return predictions.flatten()
 
 
 def train_model(X_train, y_train):
@@ -101,59 +207,40 @@ def plot_forecast(future_vals, country):
 
 
 if __name__ == "__main__":
-    data_path = "cleanedd_Attack_file.xlsx"
+    # Test the LSTM model
+    from preprocess import load_and_preprocess_data, get_top_10_countries
+    
+    # Load and preprocess data
+    df = load_and_preprocess_data("Data/cleanedd_Attack_file.csv")
+    if df is not None:
+        # Get top 10 countries
+        top_10 = get_top_10_countries(df)
+        
+        # Dictionary to store predictions for all countries
+        all_predictions = {}
+        
+        # Process each country
+        for country in top_10:
+            print(f"\nProcessing predictions for {country}...")
+            try:
+                model, scaler = train_lstm_model(df, country)
+                predictions = generate_predictions(model, scaler, df, country)
+                # Convert predictions to list for JSON serialization
+                predictions_list = predictions.tolist() if hasattr(predictions, 'tolist') else list(predictions)
+                all_predictions[country] = predictions_list
+                print(f"Generated {len(predictions)} days of predictions for {country}")
+            except Exception as e:
+                print(f"Error processing {country}: {str(e)}")
+                continue
 
-    df = load_data(data_path)
-    if df is None or df.empty:
-        print("Loaded data is empty or invalid.")
-        exit(1)
-
-    top_countries = df.groupby('Country')['Total_Attack_Percentage'].mean().nlargest(10).index
-    seq_length = 10
-    future_predictions = {}
-
-    for country in top_countries:
-        series = create_time_series(df, country)
-        if series.empty:
-            print(f"No data for {country}")
-            continue
-
-        X, y, scaler = preprocess_data(series, seq_length)
-        if len(X) < 20:
-            print(f"Insufficient data for {country}")
-            continue
-
-        X_flat = X.reshape((X.shape[0], X.shape[1]))
-        X_train, X_test, y_train, y_test = train_test_split(X_flat, y, test_size=0.2, random_state=42)
-
-        print(f"Training model for {country}")
-        model = train_model(X_train, y_train)
-
-        predictions = model.predict(X_test)
-        try:
-            predictions_inv = scaler.inverse_transform(predictions.reshape(-1, 1))
-            y_test_inv = scaler.inverse_transform(y_test.reshape(-1, 1))
-        except ValueError as e:
-            print(f"Scaler inverse transform failed for {country}: {e}")
-            continue
-
-        rmse = np.sqrt(np.mean((predictions_inv - y_test_inv) ** 2))
-        print(f'RMSE for {country}: {rmse}')
-
-        plot_loss(y_test_inv, predictions_inv, country)
-
-        last_sequence = X[-1].reshape(-1)
-        future_vals = predict_future(model, last_sequence, scaler, steps=180)
-        avg_future = np.mean(future_vals)
-        last_value = scaler.inverse_transform([y[-1]])[0]
-        percentage_change = ((avg_future - last_value) / last_value) * 100
-        percentage_change = percentage_change.item()
-        future_predictions[country] = percentage_change
-        print(f"Future prediction for {country}: {percentage_change:.2f}% change over the next 6 months")
-
-        plot_forecast(future_vals, country)
-
-    os.makedirs('web', exist_ok=True)
-    with open('web/future_predictions.json', 'w') as f:
-        json.dump(future_predictions, f, indent=2)
-    print("Future predictions saved to web/future_predictions.json")
+        # Save all predictions
+        os.makedirs('web', exist_ok=True)
+        with open('web/future_predictions.json', 'w') as f:
+            json.dump(all_predictions, f, indent=2)
+        print("\nAll predictions saved to web/future_predictions.json")
+        
+        # Print summary
+        print("\nPrediction Summary:")
+        for country, preds in all_predictions.items():
+            avg_pred = sum(preds) / len(preds)
+            print(f"{country}: Average predicted attack percentage = {avg_pred:.2f}%")
